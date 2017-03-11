@@ -1,4 +1,4 @@
-package br.com.classes;
+package br.com.models;
 
 /**
  * Created by mauricio on 08/03/17.
