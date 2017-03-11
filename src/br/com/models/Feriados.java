@@ -1,4 +1,4 @@
-package br.com.model;
+package br.com.models;
 
 /**
  * Created by mauricio on 11/03/17.
@@ -13,6 +13,15 @@ public class Feriados {
 		this.nome = nome;
 		this.data = data;
 		this.nacional = nacional;
+	}
+
+	public void mostrar(){
+		System.out.println("=Feriado");
+		System.out.println("=Nome: " + getNome());
+		System.out.println("=Data: " + getData());
+		if (isNacional()){
+			System.out.println("=Feriado Nacional.");
+		}
 	}
 
 	public String getNome() {

@@ -5,6 +5,7 @@ package br.com.models;
  */
 public class Aniversario {
 
+	private int codigo;
 	private String nomeAniversariante;
 	private String data;
 	private String dataFesta;
@@ -15,6 +16,22 @@ public class Aniversario {
 		this.data = data;
 		this.dataFesta = dataFesta;
 		this.horaFesta = horaFesta;
+	}
+
+	public void mostrar(){
+		System.out.println("=Aniversario");
+		System.out.println("=Aniversariante: " + getNomeAniversariante());
+		System.out.println("=Data: " + getData());
+		System.out.println("=Data da Festa: " + getDataFesta());
+		System.out.println("=Hora da Festa: " + getHoraFesta());
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public String getNomeAniversariante() {

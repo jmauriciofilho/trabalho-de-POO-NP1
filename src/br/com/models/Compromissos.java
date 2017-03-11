@@ -22,7 +22,7 @@ public class Compromissos {
     }
 
     public void mostrar(){
-        System.out.println("==========Compromisso==========");
+        System.out.println("=Compromisso");
         System.out.println("=Título: " + getTitulo());
         System.out.println("=Descrição: " + getDescricao());
         if (isDiaInteiro()){

@@ -18,6 +18,13 @@ public class Tarefas {
 		this.concluida = concluida;
 	}
 
+	public void mostrar(){
+		System.out.println("=Tarefa");
+		System.out.println("=Descrição: " + getDescricao());
+		System.out.println("=Data de Conclusão: " + getDataDeConclusao());
+
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}

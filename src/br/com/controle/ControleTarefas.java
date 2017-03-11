@@ -32,7 +32,7 @@ public class ControleTarefas {
 			tarefas.add(t);
 			return "Adicionado com sucesso.";
 		}
-		return "Compromisso não adicionado.";
+		return "Tarefa não adicionado.";
 	}
 
 	public void editar(Tarefas t){
@@ -46,7 +46,7 @@ public class ControleTarefas {
 			tarefas.remove(t);
 			return "Removido com sucesso.";
 		}
-		return "Compromisso não removido.";
+		return "Tarefa não removida.";
 	}
 
 	public List<Tarefas> buscarTodos(){
