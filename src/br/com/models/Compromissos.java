@@ -9,10 +9,8 @@ public class Compromissos {
     private String titulo;
     private String descricao;
     private boolean diaInteiro;
-    private String dataInicio;
-    private String horarioInicio;
-    private String dataFim;
-    private String horarioFim;
+    private String dataHoraInicio;
+    private String dataHoraFim;
 
     public Compromissos(int codigo, String titulo, String descricao, boolean diaInteiro){
         this.codigo = codigo;
@@ -21,15 +19,22 @@ public class Compromissos {
         this.diaInteiro = diaInteiro;
     }
 
+    public Compromissos(int codigo, String titulo, String descricao, String dataHoraInicio, String dataHoraFim){
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.dataHoraInicio = dataHoraInicio;
+        this.dataHoraFim = dataHoraFim;
+    }
+
     public void mostrar(){
         System.out.println("=Compromisso");
         System.out.println("=Título: " + getTitulo());
         System.out.println("=Descrição: " + getDescricao());
         if (isDiaInteiro()){
             System.out.println("=Evento programado para o dia inteiro.");
-        }else{
-            System.out.println("=Data: " + getDataInicio() + " à " + getDataFim());
-            System.out.println("=Horario " + getHorarioInicio() + " à " + getHorarioFim());
+        }else {
+            System.out.println("=Duração: " + getDataHoraInicio() + " à " + getDataHoraFim());
         }
     }
 
@@ -65,36 +70,20 @@ public class Compromissos {
         this.diaInteiro = diaInteiro;
     }
 
-    public String getDataInicio() {
-        return dataInicio;
+    public String getDataHoraInicio() {
+        return dataHoraInicio;
     }
 
-    public void setDataInicio(String dataInicio) {
-        this.dataInicio = dataInicio;
+    public void setDataHoraInicio(String dataInicio) {
+        this.dataHoraInicio = dataHoraInicio;
     }
 
-    public String getHorarioInicio() {
-        return horarioInicio;
+    public String getDataHoraFim() {
+        return dataHoraFim;
     }
 
-    public void setHorarioInicio(String horarioInicio) {
-        this.horarioInicio = horarioInicio;
-    }
-
-    public String getDataFim() {
-        return dataFim;
-    }
-
-    public void setDataFim(String dataFim) {
-        this.dataFim = dataFim;
-    }
-
-    public String getHorarioFim() {
-        return horarioFim;
-    }
-
-    public void setHorarioFim(String horarioFim) {
-        this.horarioFim = horarioFim;
+    public void setDataHoraFim(String dataFim) {
+        this.dataHoraFim = dataHoraFim;
     }
 
 }

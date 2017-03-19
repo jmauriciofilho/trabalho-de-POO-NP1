@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ControleAniversario {
 	private List<Aniversario> aniversarios;
-	private int index = 0;
+	private int posicao = 0;
 
 	public ControleAniversario(){
 		aniversarios = new ArrayList<>();
@@ -20,7 +20,7 @@ public class ControleAniversario {
 
 		for (int i = 0; i < aniversarios.size(); i++) {
 			if (codigo == aniversarios.get(i).getCodigo()){
-				index = i;
+				this.posicao = i;
 				return aniversarios.get(i).getNomeAniversariante();
 			}
 		}
@@ -37,13 +37,13 @@ public class ControleAniversario {
 
 	public void editar(Aniversario a){
 		if (buscar(a.getCodigo())!=null){
-			aniversarios.set(index, a);
+			aniversarios.set(this.posicao, a);
 		}
 	}
 
 	public String remover(Aniversario t){
 		if (buscar(t.getCodigo())!=null){
-			aniversarios.remove(t);
+			aniversarios.remove(this.posicao);
 			return "Removido com sucesso.";
 		}
 		return "Aniversário não removido.";

@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ControleTarefas {
 	private List<Tarefas> tarefas;
-	private int index = 0;
+	private int posicao = 0;
 
 	public ControleTarefas(){
 		tarefas = new ArrayList<>();
@@ -20,7 +20,7 @@ public class ControleTarefas {
 
 		for (int i = 0; i < tarefas.size(); i++) {
 			if (codigo == tarefas.get(i).getCodigo()){
-				index = i;
+				this.posicao = i;
 				return tarefas.get(i).getDescricao();
 			}
 		}
@@ -37,13 +37,13 @@ public class ControleTarefas {
 
 	public void editar(Tarefas t){
 		if (buscar(t.getCodigo())!=null){
-			tarefas.set(index, t);
+			tarefas.set(this.posicao, t);
 		}
 	}
 
 	public String remover(Tarefas t){
 		if (buscar(t.getCodigo())!=null){
-			tarefas.remove(t);
+			tarefas.remove(this.posicao);
 			return "Removido com sucesso.";
 		}
 		return "Tarefa não removida.";
