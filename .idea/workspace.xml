@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="181a51ba-de1c-48fc-ab5c-4b49073aab7f" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/agenda/Menu.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/controle/ControleCompromisso.java" />
@@ -10,6 +11,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/models/Tarefas.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" afterPath="" />
+=======
+>>>>>>> sem modificação
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/App.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/models/Feriados.java" afterPath="$PROJECT_DIR$/src/br/com/models/Feriados.java" />
@@ -28,16 +31,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="ControleAniversario.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="799">
               <caret line="54" column="1" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+=======
+      <file leaf-file-name="Feriados.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/models/Feriados.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+>>>>>>> sem modificação
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,6 +92,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> sem modificação
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -109,7 +123,10 @@
         <option value="$PROJECT_DIR$/src/br/com/controle/ControleCompromisso.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/App.java" />
         <option value="$PROJECT_DIR$/src/br/com/models/Feriados.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
+=======
+>>>>>>> sem modificação
       </list>
     </option>
   </component>
@@ -121,8 +138,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="24" />
+    <option name="x" value="33" />
+    <option name="y" value="30" />
     <option name="width" value="1307" />
     <option name="height" value="744" />
   </component>
@@ -142,7 +159,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+      <pane id="Scope" />
+>>>>>>> sem modificação
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,6 +191,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
+<<<<<<< HEAD
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+>>>>>>> sem modificação
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -216,11 +244,33 @@
               <option name="myItemId" value="agenda" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalhoDePOONP1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalhoDePOONP1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RemoteSystemsTempFiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+>>>>>>> sem modificação
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -632,18 +682,29 @@
       <workItem from="1489079298403" duration="140000" />
       <workItem from="1489144283140" duration="26000" />
       <workItem from="1489195058620" duration="39000" />
+<<<<<<< HEAD
       <workItem from="1489943439894" duration="4389000" />
       <workItem from="1489955777916" duration="1609000" />
       <workItem from="1489950054239" duration="1293000" />
       <workItem from="1489972188275" duration="8000" />
+=======
+      <workItem from="1490048195643" duration="172000" />
+>>>>>>> sem modificação
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="2591000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="33" y="30" width="1307" height="744" extended-state="1" />
+>>>>>>> sem modificação
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -660,7 +721,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24864446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24941905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> sem modificação
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -691,6 +756,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="918">
           <caret line="54" column="1" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
           <folding />
@@ -711,14 +777,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="1" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="50" selection-end-column="1" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> sem modificação
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromisso.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1003">
           <caret line="59" column="1" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
+=======
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+>>>>>>> sem modificação
           <folding />
         </state>
       </provider>
@@ -731,6 +806,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/br/com/models/Compromissos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -753,6 +829,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/persistencia/PersistenciaAgenda.java" />
+>>>>>>> sem modificação
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -772,6 +852,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" />
     <entry file="file://$PROJECT_DIR$/src/br/com/persistencia/PersistenciaAgenda.java" />
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/models/Feriados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/persistencia/PersistenciaAgenda.java" />
+=======
+>>>>>>> sem modificação
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -795,9 +897,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> sem modificação
         </state>
       </provider>
     </entry>
@@ -805,6 +911,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> sem modificação
         </state>
       </provider>
     </entry>
@@ -822,25 +932,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/models/Feriados.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/persistencia/PersistenciaAgenda.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/models/Feriados.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
@@ -898,6 +989,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/persistencia/PersistenciaAgenda.java" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java" />
     <entry file="file://$PROJECT_DIR$/src/br/com/models/Aniversario.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -910,11 +1002,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="63" column="1" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromisso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+>>>>>>> sem modificação
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/models/Feriados.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromissos.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="214">
           <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
         </state>
@@ -931,30 +1031,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="55" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+=======
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+>>>>>>> sem modificação
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleCompromisso.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="59" column="1" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+>>>>>>> sem modificação
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="54" column="1" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+>>>>>>> sem modificação
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="1" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="50" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/models/Feriados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+>>>>>>> sem modificação
           <folding />
         </state>
       </provider>
