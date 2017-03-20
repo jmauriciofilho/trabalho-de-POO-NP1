@@ -12,6 +12,10 @@ public class Compromissos {
     private String dataHoraInicio;
     private String dataHoraFim;
 
+    public Compromissos(int codigo){
+        this.codigo = codigo;
+    }
+
     public Compromissos(int codigo, String titulo, String descricao, boolean diaInteiro){
         this.codigo = codigo;
         this.titulo = titulo;
@@ -28,7 +32,7 @@ public class Compromissos {
     }
 
     public void mostrar(){
-        System.out.println("=Compromisso");
+        System.out.println("=Código: " + getCodigo());
         System.out.println("=Título: " + getTitulo());
         System.out.println("=Descrição: " + getDescricao());
         if (isDiaInteiro()){
@@ -36,6 +40,7 @@ public class Compromissos {
         }else {
             System.out.println("=Duração: " + getDataHoraInicio() + " à " + getDataHoraFim());
         }
+        System.out.println("=================================================");
     }
 
     public int getCodigo() {

@@ -11,18 +11,27 @@ public class Tarefas {
 	private String dataDeConclusao;
 	private boolean concluida;
 
-	public Tarefas(String descricao, int prioridade, String dataDeConclusao, boolean concluida) {
+	public Tarefas(int codigo){
+		this.codigo = codigo;
+	}
+
+	public Tarefas(int codigo, String descricao, int prioridade, String dataDeConclusao, boolean concluida) {
+		this.codigo = codigo;
 		this.descricao = descricao;
 		this.prioridade = prioridade;
 		this.dataDeConclusao = dataDeConclusao;
 		this.concluida = concluida;
 	}
 
+	public void completarTarefa(){
+		this.concluida = true;
+	}
+
 	public void mostrar(){
-		System.out.println("=Tarefa");
+		System.out.println("=Código: " + getCodigo());
 		System.out.println("=Descrição: " + getDescricao());
 		System.out.println("=Data de Conclusão: " + getDataDeConclusao());
-
+		System.out.println("======================================");
 	}
 
 	public int getCodigo() {

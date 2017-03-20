@@ -49,6 +49,10 @@ public class ControleTarefas {
 		return "Tarefa não removida.";
 	}
 
+	public int tamanho(){
+		return tarefas.size();
+	}
+
 	public List<Tarefas> buscarTodos(){
 		return tarefas;
 	}
