@@ -11,7 +11,7 @@ public class Menu {
 		System.out.println("=2 - Menu Feriados=============");
 		System.out.println("=3 - Menu Tarefas==============");
 		System.out.println("=4 - Menu Aniversários=========");
-		System.out.println("=5 - Sair======================");
+		System.out.println("=7 - Sair======================");
 	}
 
 	public static void menuCompromissos(){

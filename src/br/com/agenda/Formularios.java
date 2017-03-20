@@ -93,9 +93,10 @@ public class Formularios {
 		System.out.println("Informe a descrição da tarefa:");
 		scanner.nextLine();
 		String descricao = scanner.nextLine();
-		System.out.println("Informe a prioridade da tarefa:");
+		System.out.println("Informe a prioridade da tarefa: 1 - para alta, 2 - para média, 3 - para baixa");
 		int prioridade = scanner.nextInt();
-		System.out.println("Informe dara de conclusão da tarefa:");
+		System.out.println("Informe a data de conclusão da tarefa:");
+		scanner.nextLine();
 		String data = scanner.nextLine();
 		boolean concluida = false;
 		Tarefas tarefa = new Tarefas(codigo, descricao, prioridade, data, concluida);

@@ -16,12 +16,12 @@ public class Feriados {
 	}
 
 	public void mostrar(){
-		System.out.println("=Feriado");
 		System.out.println("=Nome: " + getNome());
 		System.out.println("=Data: " + getData());
 		if (isNacional()){
 			System.out.println("=Feriado Nacional.");
 		}
+		System.out.println("==========================");
 	}
 
 	public String getNome() {

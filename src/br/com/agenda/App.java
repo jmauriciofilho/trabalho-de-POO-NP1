@@ -109,12 +109,12 @@ public class App {
                                 break;
                         }
                     }while (opcao != 5);
-                case 5:
+                case 7:
                     System.out.println("Programa encerrado.");
                     break;
             }
 
-        }while (opcao != 5);
+        }while (opcao != 7);
 
     }
 }

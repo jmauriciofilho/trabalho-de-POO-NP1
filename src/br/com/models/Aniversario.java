@@ -24,11 +24,11 @@ public class Aniversario {
 	}
 
 	public void mostrar(){
-		System.out.println("=Aniversario");
 		System.out.println("=Aniversariante: " + getNomeAniversariante());
 		System.out.println("=Data: " + getData());
 		System.out.println("=Data da Festa: " + getDataFesta());
 		System.out.println("=Hora da Festa: " + getHoraFesta());
+		System.out.println("=======================================");
 	}
 
 	public int getCodigo() {
