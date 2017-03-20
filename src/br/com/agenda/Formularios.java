@@ -49,6 +49,7 @@ public class Formularios {
 		System.out.println("Informe o codigo do compromisso:");
 		int codigo = scanner.nextInt();
 		System.out.println("Informe o titulo:");
+		scanner.nextLine();
 		String titulo = scanner.nextLine();
 		System.out.println("Informe a descrição:");
 		String descricao = scanner.nextLine();
@@ -105,6 +106,7 @@ public class Formularios {
 		System.out.println("Informe o código da tarefa: ");
 		int codigo = scanner.nextInt();
 		System.out.println("Informe a descrição da tarefa:");
+		scanner.nextLine();
 		String descricao = scanner.nextLine();
 		System.out.println("Informe a prioridade da tarefa:");
 		int prioridade = scanner.nextInt();
@@ -165,6 +167,7 @@ public class Formularios {
 		System.out.println("Informe o código do aniversario:");
 		int codigo = scanner.nextInt();
 		System.out.println("Informe o nome do aniversariante:");
+		scanner.nextLine();
 		String nome = scanner.nextLine();
 		System.out.println("Informe o dia do aniversario:");
 		String data = scanner.nextLine();

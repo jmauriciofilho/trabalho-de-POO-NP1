@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="181a51ba-de1c-48fc-ab5c-4b49073aab7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/controle/ControleFeriados.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/App.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/Menu.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java" afterPath="$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/controle/ControleTarefas.java" afterPath="$PROJECT_DIR$/src/br/com/controle/ControleTarefas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/models/Aniversario.java" afterPath="$PROJECT_DIR$/src/br/com/models/Aniversario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/models/Tarefas.java" afterPath="$PROJECT_DIR$/src/br/com/models/Tarefas.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Formularios.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Formularios.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Formularios.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="148" column="89" lean-forward="false" selection-start-line="148" selection-start-column="89" selection-end-line="148" selection-end-column="89" />
+            <state relative-caret-position="520">
+              <caret line="165" column="85" lean-forward="false" selection-start-line="165" selection-start-column="85" selection-end-line="165" selection-end-column="85" />
               <folding>
                 <element signature="method#formCadastroCompromisso#0;class#Formularios#0" expanded="false" />
                 <element signature="method#formEditarCompromisso#0;class#Formularios#0" expanded="false" />
@@ -51,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1360">
@@ -93,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/br/com/models/Aniversario.java" />
         <option value="$PROJECT_DIR$/src/br/com/controle/ControleAniversario.java" />
         <option value="$PROJECT_DIR$/src/br/com/controle/ControleFeriados.java" />
-        <option value="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/App.java" />
+        <option value="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
       </list>
     </option>
   </component>
@@ -686,12 +678,12 @@
       <workItem from="1489886132622" duration="11000" />
       <workItem from="1489931396428" duration="66000" />
       <workItem from="1490016606356" duration="4017000" />
-      <workItem from="1490034469937" duration="9813000" />
+      <workItem from="1490034469937" duration="10428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33986000" />
+    <option name="totallyTimeSpent" value="34601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
@@ -1054,10 +1046,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+          <folding>
+            <element signature="e#623#668#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Formularios.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="148" column="89" lean-forward="false" selection-start-line="148" selection-start-column="89" selection-end-line="148" selection-end-column="89" />
+        <state relative-caret-position="520">
+          <caret line="165" column="85" lean-forward="false" selection-start-line="165" selection-start-column="85" selection-end-line="165" selection-end-column="85" />
           <folding>
             <element signature="method#formCadastroCompromisso#0;class#Formularios#0" expanded="false" />
             <element signature="method#formEditarCompromisso#0;class#Formularios#0" expanded="false" />
@@ -1073,16 +1075,6 @@
             <element signature="method#formRemoverAniversario#0;class#Formularios#0" expanded="false" />
             <element signature="method#formMostrarAniversario#0;class#Formularios#0" expanded="false" />
             <element signature="method#formMostraFeriados#0;class#Formularios#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
-          <folding>
-            <element signature="e#623#668#1" expanded="true" />
           </folding>
         </state>
       </provider>
