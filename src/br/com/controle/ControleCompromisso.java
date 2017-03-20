@@ -11,7 +11,7 @@ import java.util.List;
 public class ControleCompromisso {
 
 	private List<Compromissos> compromissos;
-	private int index = 0;
+	private int posicao = 0;
 
 	public ControleCompromisso(){
 		compromissos = new ArrayList<>();
@@ -21,7 +21,7 @@ public class ControleCompromisso {
 
 		for (int i = 0; i < compromissos.size(); i++) {
 			if (codigo == compromissos.get(i).getCodigo()){
-				index = i;
+				this.posicao = i;
 				return compromissos.get(i).getTitulo();
 			}
 		}
@@ -38,16 +38,20 @@ public class ControleCompromisso {
 
 	public void editar(Compromissos c){
 		if (buscar(c.getCodigo())!=null){
-			compromissos.set(index, c);
+			compromissos.set(this.posicao, c);
 		}
 	}
 
 	public String remover(Compromissos c){
 		if (buscar(c.getCodigo())!=null){
-			compromissos.remove(c);
+			compromissos.remove(this.posicao);
 			return "Removido com sucesso.";
 		}
 		return "Compromisso não removido.";
+	}
+
+	public int tamanho(){
+		return compromissos.size();
 	}
 
 	public List<Compromissos> buscarTodos(){

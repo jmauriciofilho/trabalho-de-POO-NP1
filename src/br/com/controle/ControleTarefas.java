@@ -10,18 +10,18 @@ import java.util.List;
  */
 public class ControleTarefas {
 	private List<Tarefas> tarefas;
-	private int index = 0;
+	private int posicao = 0;
 
 	public ControleTarefas(){
 		tarefas = new ArrayList<>();
 	}
 
-	public String buscar(int codigo){
+	public Tarefas buscar(int codigo){
 
 		for (int i = 0; i < tarefas.size(); i++) {
 			if (codigo == tarefas.get(i).getCodigo()){
-				index = i;
-				return tarefas.get(i).getDescricao();
+				this.posicao = i;
+				return tarefas.get(i);
 			}
 		}
 		return null;
@@ -32,21 +32,25 @@ public class ControleTarefas {
 			tarefas.add(t);
 			return "Adicionado com sucesso.";
 		}
-		return "Compromisso não adicionado.";
+		return "Tarefa não adicionado.";
 	}
 
 	public void editar(Tarefas t){
 		if (buscar(t.getCodigo())!=null){
-			tarefas.set(index, t);
+			tarefas.set(this.posicao, t);
 		}
 	}
 
 	public String remover(Tarefas t){
 		if (buscar(t.getCodigo())!=null){
-			tarefas.remove(t);
+			tarefas.remove(this.posicao);
 			return "Removido com sucesso.";
 		}
-		return "Compromisso não removido.";
+		return "Tarefa não removida.";
+	}
+
+	public int tamanho(){
+		return tarefas.size();
 	}
 
 	public List<Tarefas> buscarTodos(){
