@@ -38,7 +38,8 @@ public class Menu {
 		System.out.println("=2 - Editar tarefa===================");
 		System.out.println("=3 - Remover tarefa==================");
 		System.out.println("=4 - Ver todas as tarefas============");
-		System.out.println("=5 - Voltar==========================");
+		System.out.println("=5 - Completar tarefa.===============");
+		System.out.println("=6 - Voltar==========================");
 	}
 
 	public static void menuAniversarios(){

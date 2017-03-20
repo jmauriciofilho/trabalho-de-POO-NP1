@@ -30,7 +30,9 @@ public class Tarefas {
 	public void mostrar(){
 		System.out.println("=Código: " + getCodigo());
 		System.out.println("=Descrição: " + getDescricao());
+		System.out.println("=Prioridade: " + getPrioridade());
 		System.out.println("=Data de Conclusão: " + getDataDeConclusao());
+		System.out.println("=Concluida: " + isConcluida());
 		System.out.println("======================================");
 	}
 

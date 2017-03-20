@@ -16,12 +16,12 @@ public class ControleTarefas {
 		tarefas = new ArrayList<>();
 	}
 
-	public String buscar(int codigo){
+	public Tarefas buscar(int codigo){
 
 		for (int i = 0; i < tarefas.size(); i++) {
 			if (codigo == tarefas.get(i).getCodigo()){
 				this.posicao = i;
-				return tarefas.get(i).getDescricao();
+				return tarefas.get(i);
 			}
 		}
 		return null;

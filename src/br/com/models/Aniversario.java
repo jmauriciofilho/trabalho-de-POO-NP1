@@ -11,7 +11,12 @@ public class Aniversario {
 	private String dataFesta;
 	private String horaFesta;
 
-	public Aniversario(String nomeAniversariante, String data, String dataFesta, String horaFesta) {
+	public Aniversario(int codigo){
+		this.codigo = codigo;
+	}
+
+	public Aniversario(int codigo, String nomeAniversariante, String data, String dataFesta, String horaFesta) {
+		this.codigo = codigo;
 		this.nomeAniversariante = nomeAniversariante;
 		this.data = data;
 		this.dataFesta = dataFesta;

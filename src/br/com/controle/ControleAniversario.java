@@ -49,6 +49,10 @@ public class ControleAniversario {
 		return "Aniversário não removido.";
 	}
 
+	public int tamanho(){
+		return aniversarios.size();
+	}
+
 	public List<Aniversario> buscarTodos(){
 		return aniversarios;
 	}

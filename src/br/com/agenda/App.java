@@ -2,6 +2,7 @@ package br.com.agenda;
 
 import br.com.controle.ControleAniversario;
 import br.com.controle.ControleCompromisso;
+import br.com.controle.ControleFeriados;
 import br.com.controle.ControleTarefas;
 import br.com.models.Compromissos;
 import br.com.models.Tarefas;
@@ -17,15 +18,16 @@ public class App {
         ControleCompromisso c = new ControleCompromisso();
         ControleAniversario ca = new ControleAniversario();
         ControleTarefas ct = new ControleTarefas();
+        ControleFeriados cf = new ControleFeriados();
         int opcao = 0;
         do {
             Menu.menuInicial();
             opcao = scanner.nextInt();
             switch (opcao){
                 case 1:
-                    Menu.menuCompromissos();
-                    opcao = scanner.nextInt();
                     do {
+                        Menu.menuCompromissos();
+                        opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
                                 Formularios.formCadastroCompromisso(scanner, c);
@@ -46,21 +48,23 @@ public class App {
                     }while (opcao != 5);
                     break;
                 case 2:
-                    Menu.menuFeriados();
-                    opcao = scanner.nextInt();
                     do {
+                        Menu.menuFeriados();
+                        opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
+                                Formularios.formMostraFeriados(cf);
                                 break;
                             case 2:
+                                System.out.println("Menu anterior.");
                                 break;
                         }
                     }while (opcao != 2);
                     break;
                 case 3:
-                    Menu.menuTarefas();
-                    opcao = scanner.nextInt();
                     do {
+                        Menu.menuTarefas();
+                        opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
                                 Formularios.formCadastrarTarefa(scanner, ct);
@@ -69,28 +73,39 @@ public class App {
                                 Formularios.formEditarTarefa(scanner, ct);
                                 break;
                             case 3:
+                                Formularios.formRemoverTarefa(scanner, ct);
                                 break;
                             case 4:
+                                Formularios.formMostrarTarefas(ct);
                                 break;
                             case 5:
+                                Formularios.formCompletarTarefa(scanner, ct);
+                                break;
+                            case 6:
+                                System.out.println("Menu anterior.");
                                 break;
                         }
-                    }while (opcao != 5);
+                    }while (opcao != 6);
                     break;
                 case 4:
-                    Menu.menuAniversarios();
-                    opcao = scanner.nextInt();
                     do {
+                        Menu.menuAniversarios();
+                        opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
+                                Formularios.formCadastroAniversario(scanner, ca);
                                 break;
                             case 2:
+                                Formularios.formEditarAniversario(scanner, ca);
                                 break;
                             case 3:
+                                Formularios.formRemoverAniversario(scanner, ca);
                                 break;
                             case 4:
+                                Formularios.formMostrarAniversario(ca);
                                 break;
                             case 5:
+                                System.out.println("Menu anterior.");
                                 break;
                         }
                     }while (opcao != 5);
