@@ -130,14 +130,22 @@ public class Formularios {
 		for (int i = 0; i < tarefas.size(); i++){
 			if (!tarefas.get(i).isConcluida() && tarefas.get(i).getPrioridade() == 1) {
 				tarefas.get(i).mostrar();
-			}else if(!tarefas.get(i).isConcluida() && tarefas.get(i).getPrioridade() == 2) {
-				tarefas.get(i).mostrar();
-			}else if(!tarefas.get(i).isConcluida() && tarefas.get(i).getPrioridade() == 3){
-				tarefas.get(i).mostrar();
-			}else{
+			}
+		}
+		for (int i = 0; i < tarefas.size(); i++){
+			if(!tarefas.get(i).isConcluida() && tarefas.get(i).getPrioridade() == 2) {
 				tarefas.get(i).mostrar();
 			}
-
+		}
+		for (int i = 0; i < tarefas.size(); i++){
+			if(!tarefas.get(i).isConcluida() && tarefas.get(i).getPrioridade() == 3){
+				tarefas.get(i).mostrar();
+			}
+		}
+		for (int i = 0; i < tarefas.size(); i++){
+			if (tarefas.get(i).isConcluida()){
+				tarefas.get(i).mostrar();
+			}
 		}
 	}
 
