@@ -11,7 +11,11 @@ import java.util.List;
 public class ControleCompromisso {
 
 	private List<Compromissos> compromissos;
+<<<<<<< HEAD
 	private int posicao = 0;
+=======
+    private int posicao = 0;
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
 
 	public ControleCompromisso(){
 		compromissos = new ArrayList<>();
@@ -57,4 +61,8 @@ public class ControleCompromisso {
 	public List<Compromissos> buscarTodos(){
 		return compromissos;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a

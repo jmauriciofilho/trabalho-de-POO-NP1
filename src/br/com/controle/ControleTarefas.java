@@ -9,19 +9,31 @@ import java.util.List;
  * Created by mauricio on 11/03/17.
  */
 public class ControleTarefas {
+<<<<<<< HEAD
 	private List<Tarefas> tarefas;
+=======
+    private List<Tarefas> tarefas;
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
 	private int posicao = 0;
 
 	public ControleTarefas(){
 		tarefas = new ArrayList<>();
 	}
 
+<<<<<<< HEAD
 	public Tarefas buscar(int codigo){
+=======
+	public String buscar(int codigo){
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
 
 		for (int i = 0; i < tarefas.size(); i++) {
 			if (codigo == tarefas.get(i).getCodigo()){
 				this.posicao = i;
+<<<<<<< HEAD
 				return tarefas.get(i);
+=======
+				return tarefas.get(i).getDescricao();
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
 			}
 		}
 		return null;
@@ -49,10 +61,13 @@ public class ControleTarefas {
 		return "Tarefa não removida.";
 	}
 
+<<<<<<< HEAD
 	public int tamanho(){
 		return tarefas.size();
 	}
 
+=======
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
 	public List<Tarefas> buscarTodos(){
 		return tarefas;
 	}

@@ -9,7 +9,11 @@ import java.util.List;
  * Created by mauricio on 11/03/17.
  */
 public class ControleAniversario {
+<<<<<<< HEAD
 	private List<Aniversario> aniversarios;
+=======
+    private List<Aniversario> aniversarios;
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
 	private int posicao = 0;
 
 	public ControleAniversario(){
@@ -49,6 +53,7 @@ public class ControleAniversario {
 		return "Aniversário não removido.";
 	}
 
+<<<<<<< HEAD
 	public int tamanho(){
 		return aniversarios.size();
 	}
@@ -57,3 +62,9 @@ public class ControleAniversario {
 		return aniversarios;
 	}
 }
+=======
+	public List<Aniversario> buscarTodos(){
+		return aniversarios;
+	}
+}
+>>>>>>> b8dad553d2d3cf709a1179b5f119c7798b4a678a
