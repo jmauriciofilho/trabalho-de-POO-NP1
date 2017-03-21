@@ -2,7 +2,12 @@ package br.com.controle;
 
 import br.com.models.Compromissos;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -13,9 +18,12 @@ public class ControleCompromisso {
 	private List<Compromissos> compromissos;
 	private int posicao = 0;
 
+
 	public ControleCompromisso(){
 		compromissos = new ArrayList<>();
 	}
+
+
 
 	public String buscar(int codigo){
 
@@ -57,4 +65,5 @@ public class ControleCompromisso {
 	public List<Compromissos> buscarTodos(){
 		return compromissos;
 	}
+
 }
