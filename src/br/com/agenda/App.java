@@ -24,6 +24,24 @@ public class App {
             Menu.menuInicial();
             opcao = scanner.nextInt();
             switch (opcao){
+                case 0:
+                    do {
+                        Menu.menuAgenda();
+                        opcao = scanner.nextInt();
+                        switch (opcao){
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                System.out.println("Menu anterior.");
+                                break;
+                        }
+
+                    }while (opcao != 7);
+                    break;
                 case 1:
                     do {
                         Menu.menuCompromissos();
@@ -114,7 +132,7 @@ public class App {
                     break;
             }
 
-        }while (opcao != 7);
+        }while (opcao != 8);
 
     }
 }

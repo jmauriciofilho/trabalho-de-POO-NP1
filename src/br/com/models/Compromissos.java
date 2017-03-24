@@ -10,8 +10,9 @@ public class Compromissos {
     private String descricao;
     private boolean diaInteiro;
     private String repeticao;
-    private String dataHoraInicio;
-    private String dataHoraFim;
+    private Data dataInicio;
+    private Data dataFim;
+
 
     public Compromissos(int codigo){
         this.codigo = codigo;
@@ -24,12 +25,12 @@ public class Compromissos {
         this.diaInteiro = diaInteiro;
     }
 
-    public Compromissos(int codigo, String titulo, String descricao, String dataHoraInicio, String dataHoraFim){
+    public Compromissos(int codigo, String titulo, String descricao, Data dataInicio, Data dataFim){
         this.codigo = codigo;
         this.titulo = titulo;
         this.descricao = descricao;
-        this.dataHoraInicio = dataHoraInicio;
-        this.dataHoraFim = dataHoraFim;
+        this.dataInicio = dataInicio;
+        this.dataFim = dataFim;
     }
 
     public void mostrar(){
@@ -40,7 +41,8 @@ public class Compromissos {
         if (isDiaInteiro()){
             System.out.println("=Evento programado para o dia inteiro.");
         }else {
-            System.out.println("=Duração: " + getDataHoraInicio() + " à " + getDataHoraFim());
+            System.out.println("Compromisso começa: " + dataInicio.mostrarData());
+            System.out.println("Compromisso termina: " + dataFim.mostrarData());
         }
         System.out.println("=================================================");
     }
@@ -85,20 +87,11 @@ public class Compromissos {
         return repeticao;
     }
 
-    public String getDataHoraInicio() {
-        return dataHoraInicio;
+    public Data getDataInicio() {
+        return dataInicio;
     }
 
-    public void setDataHoraInicio(String dataInicio) {
-        this.dataHoraInicio = dataHoraInicio;
+    public Data getDataFim() {
+        return dataFim;
     }
-
-    public String getDataHoraFim() {
-        return dataHoraFim;
-    }
-
-    public void setDataHoraFim(String dataFim) {
-        this.dataHoraFim = dataHoraFim;
-    }
-
 }

@@ -7,11 +7,21 @@ public class Menu {
 	public static void menuInicial(){
 		System.out.println("==========Menu Inical==========");
 		System.out.println("=Escolha uma opção:============");
+		System.out.println("=0 - Menu Agenda===============");
 		System.out.println("=1 - Menu Compromissos=========");
 		System.out.println("=2 - Menu Feriados=============");
 		System.out.println("=3 - Menu Tarefas==============");
 		System.out.println("=4 - Menu Aniversários=========");
-		System.out.println("=7 - Sair======================");
+		System.out.println("=8 - Sair======================");
+	}
+
+	public static void menuAgenda(){
+		System.out.println("==========Menu Agenda==========");
+		System.out.println("=Escolha uma opção:============");
+		System.out.println("=1 - Agenda por mês============");
+		System.out.println("=2 - Agenda por dia============");
+		System.out.println("=3 - Agenda por semana=========");
+		System.out.println("=4 - Voltar====================");
 	}
 
 	public static void menuCompromissos(){
