@@ -19,9 +19,7 @@ public class Menu {
 		System.out.println("==========Menu Agenda==========");
 		System.out.println("=Escolha uma opção:============");
 		System.out.println("=1 - Agenda por mês============");
-		System.out.println("=2 - Agenda por dia============");
-		System.out.println("=3 - Agenda por semana=========");
-		System.out.println("=4 - Voltar====================");
+		System.out.println("=2 - Voltar====================");
 	}
 
 	public static void menuCompromissos(){

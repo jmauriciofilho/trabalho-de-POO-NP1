@@ -30,17 +30,14 @@ public class App {
                         opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
+                                FormularioAgenda.agenda(c);
                                 break;
                             case 2:
-                                break;
-                            case 3:
-                                break;
-                            case 4:
                                 System.out.println("Menu anterior.");
                                 break;
                         }
 
-                    }while (opcao != 7);
+                    }while (opcao != 2);
                     break;
                 case 1:
                     do {
