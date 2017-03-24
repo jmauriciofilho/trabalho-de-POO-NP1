@@ -9,6 +9,7 @@ public class Compromissos {
     private String titulo;
     private String descricao;
     private boolean diaInteiro;
+    private String repeticao;
     private String dataHoraInicio;
     private String dataHoraFim;
 
@@ -35,12 +36,17 @@ public class Compromissos {
         System.out.println("=Código: " + getCodigo());
         System.out.println("=Título: " + getTitulo());
         System.out.println("=Descrição: " + getDescricao());
+        System.out.println("=Repetição: " + getRepeticao());
         if (isDiaInteiro()){
             System.out.println("=Evento programado para o dia inteiro.");
         }else {
             System.out.println("=Duração: " + getDataHoraInicio() + " à " + getDataHoraFim());
         }
         System.out.println("=================================================");
+    }
+
+    public void repetirCompromisso(String repeticao){
+        this.repeticao = repeticao;
     }
 
     public int getCodigo() {
@@ -73,6 +79,10 @@ public class Compromissos {
 
     public void setDiaInteiro(boolean diaInteiro) {
         this.diaInteiro = diaInteiro;
+    }
+
+    public String getRepeticao(){
+        return repeticao;
     }
 
     public String getDataHoraInicio() {

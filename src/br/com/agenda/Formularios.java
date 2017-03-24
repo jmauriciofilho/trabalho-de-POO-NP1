@@ -34,6 +34,10 @@ public class Formularios {
 		Compromissos compromissos;
 		if (diaInteiro){
 			compromissos = new Compromissos(codigo, titulo, descricao, diaInteiro);
+			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
+			scanner.nextLine();
+			String repeticao = scanner.nextLine();
+			compromissos.repetirCompromisso(repeticao);
 			return c.criar(compromissos);
 		}else{
 			System.out.println("Informe data e hora de inicio:");
@@ -41,6 +45,10 @@ public class Formularios {
 			System.out.println("Informe data e hora de fim:");
 			String dataFim = scanner.nextLine();
 			compromissos = new Compromissos(codigo, titulo, descricao, data, dataFim);
+			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
+			scanner.nextLine();
+			String repeticao = scanner.nextLine();
+			compromissos.repetirCompromisso(repeticao);
 			return c.criar(compromissos);
 		}
 	}
@@ -63,6 +71,10 @@ public class Formularios {
 		Compromissos compromissos;
 		if (diaInteiro){
 			compromissos = new Compromissos(codigo, titulo, descricao, diaInteiro);
+			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
+			scanner.nextLine();
+			String repeticao = scanner.nextLine();
+			compromissos.repetirCompromisso(repeticao);
 			c.editar(compromissos);
 		}else{
 			System.out.println("Informe data e hora de inicio:");
@@ -70,6 +82,10 @@ public class Formularios {
 			System.out.println("Informe data e hora de fim:");
 			String dataFim = scanner.nextLine();
 			compromissos = new Compromissos(codigo, titulo, descricao, data, dataFim);
+			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
+			scanner.nextLine();
+			String repeticao = scanner.nextLine();
+			compromissos.repetirCompromisso(repeticao);
 			c.editar(compromissos);
 		}
 	}
