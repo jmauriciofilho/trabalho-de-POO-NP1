@@ -23,7 +23,7 @@ public class Data {
 	}
 
 	public String mostrarData(){
-		return "Data: " + diaDaSemana + "" + dia + "/" + mes + "/" + ano + " Hora: " + hora + ":" + minuto;
+		return "Data: " + diaDaSemana + " " + dia + " de " + mes + " de " + ano + " Hora: " + hora + ":" + minuto;
 	}
 
 	public int getDia() {
