@@ -23,54 +23,53 @@ public class Formularios {
 		String descricao = scanner.nextLine();
 		System.out.println("Informe a duração:");
 		System.out.println("Deseja que dure o dia inteiro? Sim ou Não");
-		String duracao = scanner.nextLine();
+		String duracao = scanner.nextLine().toLowerCase();
 		boolean diaInteiro = false;
-		if (duracao.equals("Sim")){
+		if (duracao.equals("sim")){
 			diaInteiro = true;
 		}
 		Compromissos compromissos;
 		if (diaInteiro){
-			compromissos = new Compromissos(codigo, titulo, descricao, diaInteiro);
-			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
-			scanner.nextLine();
-			String repeticao = scanner.nextLine();
-			compromissos.repetirCompromisso(repeticao);
+			System.out.println("Informe a data que o compromisso se iniciara:");
+			String diaI = scanner.nextLine();
+			System.out.println("Informe o mês que o compromisso se iniciara:");
+			System.out.println("Por favor, digite o numero do mes.");
+			String mesI = scanner.nextLine();
+			System.out.println("Informe o ano que o compromisso se iniciara:");
+			int anoI = scanner.nextInt();
+			Data dataInicio = new Data(diaI, mesI, anoI);
+			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, diaInteiro);
 			return c.criar(compromissos);
 		}else{
-			System.out.println("Informe data, mês e ano que o compromisso se iniciara:");
-			int diaI = scanner.nextInt();
-			scanner.nextLine();
+			System.out.println("Informe a data que o compromisso se iniciara:");
+			String diaI = scanner.nextLine();
+			System.out.println("Informe o mês que o compromisso se iniciara:");
+			System.out.println("Por favor, digite o numero do mes.");
 			String mesI = scanner.nextLine();
+			System.out.println("Informe o ano que o compromisso se iniciara:");
 			int anoI = scanner.nextInt();
-			System.out.println("Informe hora e minutos que compromisso se iniciara:");
+			System.out.println("Informe a hora que compromisso se iniciara:");
 			int horaI = scanner.nextInt();
-			int minutoI = scanner.nextInt();
-			System.out.println("Informe dia da semana de inicio do compromisso:");
+			String diaDaSemanaI = "sabado";
+			System.out.println("Informe a data de termino do compromisso:");
 			scanner.nextLine();
-			String diaDaSemanaI = scanner.nextLine();
-			System.out.println("Informe data, mês e ano que o compromisso terminara:");
-			int diaF = scanner.nextInt();
-			scanner.nextLine();
-			String mesF = scanner.nextLine();
+			String  diaF = scanner.nextLine();
+			System.out.println("Informe o mês de termino do compromisso:");
+			System.out.println("Por favor digite o numero do mes.");
+			String  mesF = scanner.nextLine();
+			System.out.println("Informe o ano de termino do compromisso:");
 			int anoF = scanner.nextInt();
-			System.out.println("Informe hora e minutos que o compromisso terminara:");
+			System.out.println("Informe a hora de termino do compromisso:");
 			int horaF = scanner.nextInt();
-			int minutoF = scanner.nextInt();
-			System.out.println("Informe dia da semana de termino do compromisso:");
-			scanner.nextLine();
-			String diaDaSemanaF = scanner.nextLine();
-			Data dataInicio = new Data(diaI, diaDaSemanaI, mesI, anoI, horaI, minutoI);
-			Data dataFim = new Data(diaF, diaDaSemanaF, mesF, anoF, horaF, minutoF);
+			Data dataInicio = new Data(diaI, mesI, anoI, horaI);
+			Data dataFim = new Data(diaF, mesF, anoF, horaF);
 			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, dataFim);
-			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
-			String repeticao = scanner.nextLine();
-			compromissos.repetirCompromisso(repeticao);
 			return c.criar(compromissos);
 		}
 	}
 
 	public static void formEditarCompromisso(Scanner scanner, ControleCompromisso c){
-		System.out.println("Informe o codigo do compromisso:");
+		System.out.println("Informe o código do compromisso a ser editado:");
 		int codigo = scanner.nextInt();
 		System.out.println("Informe o titulo:");
 		scanner.nextLine();
@@ -79,49 +78,49 @@ public class Formularios {
 		String descricao = scanner.nextLine();
 		System.out.println("Informe a duração:");
 		System.out.println("Deseja que dure o dia inteiro? Sim ou Não");
-		String duracao = scanner.nextLine();
+		String duracao = scanner.nextLine().toLowerCase();
 		boolean diaInteiro = false;
-		if (duracao.equals("Sim")){
+		if (duracao.equals("sim")){
 			diaInteiro = true;
 		}
 		Compromissos compromissos;
 		if (diaInteiro){
-			compromissos = new Compromissos(codigo, titulo, descricao, diaInteiro);
-			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
+			System.out.println("Informe a data que o compromisso se iniciara:");
 			scanner.nextLine();
-			String repeticao = scanner.nextLine();
-			compromissos.repetirCompromisso(repeticao);
+			String diaI = scanner.nextLine();
+			System.out.println("Informe o mês que o compromisso se iniciara:");
+			System.out.println("Por favor digite o numero do mes.");
+			String mesI = scanner.nextLine();
+			System.out.println("Informe o ano que o compromisso se iniciara:");
+			int anoI = scanner.nextInt();
+			Data dataInicio = new Data(diaI, mesI, anoI);
+			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, diaInteiro);
 			c.editar(compromissos);
 		}else{
-			System.out.println("Informe data, mês e ano que o compromisso se iniciara:");
-			int diaI = scanner.nextInt();
+			System.out.println("Informe a data que o compromisso se iniciara:");
 			scanner.nextLine();
+			String diaI = scanner.nextLine();
+			System.out.println("Informe o mês que o compromisso se iniciara:");
+			System.out.println("Por favor digite o numero do mes.");
 			String mesI = scanner.nextLine();
+			System.out.println("Informe o ano que o compromisso se iniciara:");
 			int anoI = scanner.nextInt();
-			System.out.println("Informe hora e minutos que compromisso se iniciara:");
+			System.out.println("Informe a hora que compromisso se iniciara:");
 			int horaI = scanner.nextInt();
-			int minutoI = scanner.nextInt();
-			System.out.println("Informe dia da semana de inicio do compromisso:");
+			System.out.println("Informe a data de termino do compromisso:");
 			scanner.nextLine();
-			String diaDaSemanaI = scanner.nextLine();
-			System.out.println("Informe data, mês e ano que o compromisso terminara:");
-			int diaF = scanner.nextInt();
-			scanner.nextLine();
-			String mesF = scanner.nextLine();
+			String  diaF = scanner.nextLine();
+			System.out.println("Informe o mês de termino do compromisso:");
+			System.out.println("Por favor digite o numero do mes.");
+			String  mesF = scanner.nextLine();
+			System.out.println("Informe o ano de termino do compromisso:");
 			int anoF = scanner.nextInt();
-			System.out.println("Informe hora e minutos que o compromisso terminara:");
+			System.out.println("Informe a hora de termino do compromisso:");
 			int horaF = scanner.nextInt();
 			int minutoF = scanner.nextInt();
-			System.out.println("Informe dia da semana de termino do compromisso:");
-			scanner.nextLine();
-			String diaDaSemanaF = scanner.nextLine();
-			Data dataInicio = new Data(diaI, diaDaSemanaI, mesI, anoI, horaI, minutoI);
-			Data dataFim = new Data(diaF, diaDaSemanaF, mesF, anoF, horaF, minutoF);
+			Data dataInicio = new Data(diaI, mesI, anoI, horaI);
+			Data dataFim = new Data(diaF, mesF, anoF, horaF);
 			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, dataFim);
-			System.out.println("Informe se esse compromisso se repete ou digite não para não se repetir:");
-			scanner.nextLine();
-			String repeticao = scanner.nextLine();
-			compromissos.repetirCompromisso(repeticao);
 			c.editar(compromissos);
 		}
 	}

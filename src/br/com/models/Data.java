@@ -5,32 +5,54 @@ package br.com.models;
  */
 public class Data {
 
-	private int dia;
+	private String dia;
 	private String diaDaSemana;
 	private String mes;
 	private int ano;
 	private int hora;
-	private int minuto;
 
-	public Data(int dia, String diaDaSemana, String mes, int ano, int hora, int minuto){
+	public Data(String  dia, String mes, int ano){
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+
+	public Data(String  dia, String mes, int ano, int hora){
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+		this.hora = hora;
+	}
+
+	public Data(String  dia, String diaDaSemana, String mes, int ano){
+		this.dia = dia;
+		this.diaDaSemana = diaDaSemana;
+		this.mes = mes;
+		this.ano = ano;
+
+	}
+
+	public Data(String dia, String diaDaSemana, String mes, int ano, int hora){
 		this.dia = dia;
 		this.diaDaSemana = diaDaSemana;
 		this.mes = mes;
 		this.ano = ano;
 		this.hora = hora;
-		this.minuto = minuto;
-
 	}
 
 	public String mostrarData(){
-		return "Data: " + diaDaSemana + " " + dia + " de " + mes + " de " + ano + " Hora: " + hora + ":" + minuto;
+		return dia + "/" + mes + "/" + ano;
 	}
 
-	public int getDia() {
+	public String mostrarDataHora(){
+		return dia + "/" + mes + "/" + ano + " " + hora + "h";
+	}
+
+	public String getDia() {
 		return dia;
 	}
 
-	public void setDia(int dia) {
+	public void setDia(String dia) {
 		this.dia = dia;
 	}
 
@@ -56,14 +78,6 @@ public class Data {
 
 	public void setHora(int hora) {
 		this.hora = hora;
-	}
-
-	public int getMinuto() {
-		return minuto;
-	}
-
-	public void setMinuto(int minuto) {
-		this.minuto = minuto;
 	}
 
 	public String getDiaDaSemana() {

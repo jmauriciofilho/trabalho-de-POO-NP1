@@ -4,133 +4,49 @@ import br.com.controle.ControleCompromisso;
 import br.com.models.Compromissos;
 
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created by mauricio on 24/03/17.
  */
 public class FormularioAgenda {
 
-	public static void agenda(ControleCompromisso c){
+	public static void compromissosDoMes(Scanner scanner, ControleCompromisso c){
 		List<Compromissos> compromissos = c.buscarTodos();
-		System.out.println("=========Janeiro===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("janeiro")) {
-				semana(c, compromissos);
+		System.out.println("Qual mês deseja vizualizar seus compromissos:");
+		System.out.println("Por favor digite o numero do mes.");
+		scanner.nextLine();
+		String mes = scanner.nextLine().toUpperCase();
+		System.out.println("==========" + mes + "==========");
+		for (int i = 0; i < compromissos.size(); i++){
+			if (compromissos.get(i).getDataInicio().getMes().equals(mes)){
+				compromissos.get(i).mostrar();
 			}
+			System.out.println("=======================================");
 		}
 
-		System.out.println("=========Fevereiro===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("fevereiro")) {
-				semana(c, compromissos);
-			}
-		}
+	}
 
-		System.out.println("=========Março===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("março")) {
-				semana(c, compromissos);
+	public static void compromissosDoDia(Scanner scanner, ControleCompromisso c){
+		List<Compromissos> compromissos = c.buscarTodos();
+		System.out.println("Informe o dia, mes e ano que deseja saber seus compromissos:");
+		System.out.println("Dia:");
+		scanner.nextLine();
+		String dia = scanner.nextLine();
+		System.out.println("Mês:");
+		String mes = scanner.nextLine();
+		System.out.println("Ano:");
+		int ano = scanner.nextInt();
+		System.out.println("=========" + dia + "/" + mes + "/" + ano + "=========");
+		for (int i = 0; i < compromissos.size(); i++){
+			if (compromissos.get(i).getDataInicio().getDia().equals(dia) &&
+					compromissos.get(i).getDataInicio().getMes().equals(mes) &&
+					compromissos.get(i).getDataInicio().getAno() == ano){
+				compromissos.get(i).mostrar();
 			}
-		}
-
-		System.out.println("=========Abril===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("abril")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Maio===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("maio")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Junho===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("junho")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Julho===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("julho")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Agosto===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("agosto")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Setembro===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("setembro")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Outubro===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("outubro")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Novembro===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("novembro")) {
-				semana(c, compromissos);
-			}
-		}
-
-		System.out.println("=========Dezembro===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getMes().equals("dezembro")) {
-				semana(c, compromissos);
-			}
+			System.out.println("=======================================");
 		}
 	}
 
-	public static void semana(ControleCompromisso c, List<Compromissos> compromissos){
-		System.out.println("=========Segunda===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getDiaDaSemana().equals("segunda")) {
-				compromissos.get(i).mostrar();
-			}
-		}
 
-		System.out.println("=========Terça===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getDiaDaSemana().equals("terça")) {
-				compromissos.get(i).mostrar();
-			}
-		}
-
-		System.out.println("=========Quarta===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getDiaDaSemana().equals("quarta")) {
-				compromissos.get(i).mostrar();
-			}
-		}
-
-		System.out.println("=========Quinta===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getDiaDaSemana().equals("quinta")) {
-				compromissos.get(i).mostrar();
-			}
-		}
-
-		System.out.println("=========Sexta===========");
-		for (int i = 0; i < compromissos.size(); i++) {
-			if (compromissos.get(i).getDataInicio().getDiaDaSemana().equals("sexta")) {
-				compromissos.get(i).mostrar();
-			}
-		}
-	}
 }

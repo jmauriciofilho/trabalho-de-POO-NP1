@@ -12,14 +12,16 @@ public class Menu {
 		System.out.println("=2 - Menu Feriados=============");
 		System.out.println("=3 - Menu Tarefas==============");
 		System.out.println("=4 - Menu Aniversários=========");
-		System.out.println("=8 - Sair======================");
+		System.out.println("=7 - Sair======================");
 	}
 
 	public static void menuAgenda(){
 		System.out.println("==========Menu Agenda==========");
 		System.out.println("=Escolha uma opção:============");
-		System.out.println("=1 - Agenda por mês============");
-		System.out.println("=2 - Voltar====================");
+		System.out.println("=1 - Compromissos do mês=======");
+		System.out.println("=2 - Compromissos da semana====");
+		System.out.println("=3 - Compromissos do dia=======");
+		System.out.println("=4 - Voltar====================");
 	}
 
 	public static void menuCompromissos(){
