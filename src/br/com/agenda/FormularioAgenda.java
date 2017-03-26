@@ -3,6 +3,7 @@ package br.com.agenda;
 import br.com.controle.ControleCompromisso;
 import br.com.models.Compromissos;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,7 +18,33 @@ public class FormularioAgenda {
 		System.out.println("Por favor digite o numero do mes.");
 		scanner.nextLine();
 		String mes = scanner.nextLine().toUpperCase();
-		System.out.println("==========" + mes + "==========");
+		String nomeMes = null;
+		if (mes.equals("01")){
+			nomeMes = "Janeiro";
+		}else if (mes.equals("02")){
+			nomeMes = "Fevereiro";
+		}else if (mes.equals("03")){
+			nomeMes = "Março";
+		}else if (mes.equals("04")){
+			nomeMes = "Abril";
+		}else if (mes.equals("05")){
+			nomeMes = "Maio";
+		}else if (mes.equals("06")){
+			nomeMes = "Junho";
+		}else if (mes.equals("07")){
+			nomeMes = "Julho";
+		}else if (mes.equals("08")){
+			nomeMes = "Agosto";
+		}else if (mes.equals("09")){
+			nomeMes = "Setembro";
+		}else if (mes.equals("10")){
+			nomeMes = "Outubro";
+		}else if (mes.equals("11")){
+			nomeMes = "Novembro";
+		}else if (mes.equals("12")){
+			nomeMes = "Dezembro";
+		}
+		System.out.println("==========" + nomeMes + "==========");
 		for (int i = 0; i < compromissos.size(); i++){
 			if (compromissos.get(i).getDataInicio().getMes().equals(mes)){
 				compromissos.get(i).mostrar();
@@ -25,6 +52,17 @@ public class FormularioAgenda {
 			System.out.println("=======================================");
 		}
 
+	}
+
+	public static void compromissosDaSemana(ControleCompromisso c){
+		List<Compromissos> compromissoss = c.buscarTodos();
+		Calendar calendar = Calendar.getInstance();
+		int hoje = calendar.get(Calendar.DAY_OF_WEEK);
+		for (int i = hoje; i <= 7; i++){
+			if (compromissoss.get(i).retornarDiaDaSemana() >= 1 && compromissoss.get(i).retornarDiaDaSemana() <= 7){
+				compromissoss.get(i).mostrar();
+			}
+		}
 	}
 
 	public static void compromissosDoDia(Scanner scanner, ControleCompromisso c){

@@ -51,34 +51,19 @@ public class Compromissos {
         System.out.println("=================================================");
     }
 
-    public String retornarDiaDaSemana(Data data){
+    public int retornarDiaDaSemana(){
         try {
-            String diaDaSemana = null;
             Calendar calendar = Calendar.getInstance();
             SimpleDateFormat simpleFormat = new SimpleDateFormat("dd/MM/yyyy");
-            calendar.setTime(simpleFormat.parse(data.mostrarData()));
+            calendar.setTime(simpleFormat.parse(this.dataInicio.mostrarData()));
             int semana = calendar.get(Calendar.DAY_OF_WEEK);
-            if (semana == 1){
-                diaDaSemana = "Domingo";
-            }else if (semana == 2){
-                diaDaSemana = "Segunda";
-            }else if (semana == 3){
-                diaDaSemana = "Terça";
-            }else if (semana == 4){
-                diaDaSemana = "Quarta";
-            }else if (semana == 5){
-                diaDaSemana = "Quinta";
-            }else if (semana == 6){
-                diaDaSemana = "Sexta";
-            }else if (semana == 7){
-                diaDaSemana = "Sábado";
-            }
+            return semana;
 
-            return diaDaSemana;
         }catch (ParseException e){
             e.printStackTrace();
-            return null;
+            return 0;
         }
+
     }
 
     public int getCodigo() {

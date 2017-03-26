@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="181a51ba-de1c-48fc-ab5c-4b49073aab7f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/App.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/FormularioAgenda.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/FormularioAgenda.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/Formularios.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/Formularios.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/Menu.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/Menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/Teste.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/Teste.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/models/Compromissos.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/models/Compromissos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/models/Data.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/models/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/Algoritimos/Uteis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/App.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/Menu.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/Menu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/Teste.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/Teste.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/models/Compromissos.java" afterPath="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/models/Data.java" afterPath="$PROJECT_DIR$/src/br/com/models/Data.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,12 +22,120 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+              <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormularioAgenda.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#compromissosDoMes#0;class#FormularioAgenda#0" expanded="false" />
+                <element signature="e#593#615#1" expanded="true" />
+                <element signature="e#622#638#0" expanded="true" />
+                <element signature="e#622#638#0" expanded="true" />
+                <element signature="e#677#693#0" expanded="true" />
+                <element signature="e#677#693#0" expanded="true" />
+                <element signature="e#734#750#0" expanded="true" />
+                <element signature="e#734#750#0" expanded="true" />
+                <element signature="e#787#803#0" expanded="true" />
+                <element signature="e#787#803#0" expanded="true" />
+                <element signature="e#840#856#0" expanded="true" />
+                <element signature="e#840#856#0" expanded="true" />
+                <element signature="e#892#908#0" expanded="true" />
+                <element signature="e#892#908#0" expanded="true" />
+                <element signature="e#945#961#0" expanded="true" />
+                <element signature="e#945#961#0" expanded="true" />
+                <element signature="e#998#1014#0" expanded="true" />
+                <element signature="e#998#1014#0" expanded="true" />
+                <element signature="e#1052#1068#0" expanded="true" />
+                <element signature="e#1052#1068#0" expanded="true" />
+                <element signature="e#1108#1124#0" expanded="true" />
+                <element signature="e#1108#1124#0" expanded="true" />
+                <element signature="e#1163#1179#0" expanded="true" />
+                <element signature="e#1163#1179#0" expanded="true" />
+                <element signature="e#1219#1235#0" expanded="true" />
+                <element signature="e#1219#1235#0" expanded="true" />
+                <element signature="e#1288#1325#0" expanded="true" />
+                <element signature="e#1288#1325#0" expanded="true" />
+                <element signature="e#1625#1676#1" expanded="true" />
+                <element signature="e#1679#1722#1" expanded="true" />
+                <element signature="e#1699#1721#0" expanded="true" />
+                <element signature="e#1725#1771#1" expanded="true" />
+                <element signature="e#1779#1792#1" expanded="true" />
+                <element signature="e#1774#1959#0" expanded="true" />
+                <element signature="e#1774#1959#0" expanded="true" />
+                <element signature="e#1774#1959#0" expanded="true" />
+                <element signature="e#1814#1834#0" expanded="true" />
+                <element signature="e#1814#1834#0" expanded="true" />
+                <element signature="e#1865#1885#0" expanded="true" />
+                <element signature="e#1865#1885#0" expanded="true" />
+                <element signature="e#1919#1939#0" expanded="true" />
+                <element signature="e#1919#1939#0" expanded="true" />
+                <element signature="method#compromissosDoDia#0;class#FormularioAgenda#0" expanded="false" />
+                <element signature="e#2660#2704#0" expanded="true" />
+                <element signature="e#2660#2704#0" expanded="true" />
+                <element signature="e#2660#2704#0" expanded="true" />
+                <element signature="e#2660#2704#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Compromissos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/models/Compromissos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Compromissos#1;class#Compromissos#0" expanded="false" />
+                <element signature="method#Compromissos#2;class#Compromissos#0" expanded="false" />
+                <element signature="method#mostrar#0;class#Compromissos#0" expanded="false" />
+                <element signature="e#1161#1192#0" expanded="true" />
+                <element signature="e#1161#1192#0" expanded="true" />
+                <element signature="e#1161#1192#0" expanded="true" />
+                <element signature="method#retornarDiaDaSemana#0;class#Compromissos#0" expanded="false" />
+                <element signature="e#1871#1938#0" expanded="true" />
+                <element signature="e#1871#1938#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Teste.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Teste.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Uteis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/Algoritimos/Uteis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#285#311#1" expanded="true" />
+                <element signature="e#335#357#0" expanded="true" />
+                <element signature="e#433#489#0" expanded="true" />
+                <element signature="e#433#489#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,12 +170,13 @@
         <option value="$PROJECT_DIR$/src/br/com/models/Aniversario.java" />
         <option value="$PROJECT_DIR$/src/br/com/models/Enum.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/Menu.java" />
-        <option value="$PROJECT_DIR$/src/br/com/agenda/Teste.java" />
         <option value="$PROJECT_DIR$/src/br/com/models/Data.java" />
+        <option value="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
+        <option value="$PROJECT_DIR$/src/br/com/agenda/Teste.java" />
+        <option value="$PROJECT_DIR$/src/br/com/Algoritimos/Uteis.java" />
+        <option value="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/App.java" />
-        <option value="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
-        <option value="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
       </list>
     </option>
   </component>
@@ -142,6 +241,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AgendaNP1POO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AgendaNP1POO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AgendaNP1POO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AgendaNP1POO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,16 +789,16 @@
       <workItem from="1490034469937" duration="14868000" />
       <workItem from="1490055294085" duration="526000" />
       <workItem from="1490356933657" duration="14605000" />
-      <workItem from="1490463834831" duration="16981000" />
+      <workItem from="1490463834831" duration="19567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71153000" />
+    <option name="totallyTimeSpent" value="73739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -677,7 +820,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Fluid" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -698,7 +841,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -707,13 +850,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/models/Compromissos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -977,51 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Teste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/models/Compromissos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" column="60" lean-forward="true" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Compromissos#1;class#Compromissos#0" expanded="false" />
-            <element signature="method#Compromissos#2;class#Compromissos#0" expanded="false" />
-            <element signature="method#retornarDiaDaSemana#0;class#Compromissos#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="43" column="73" lean-forward="true" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1547#1591#0" expanded="true" />
-            <element signature="e#1547#1591#0" expanded="true" />
-            <element signature="e#1547#1591#0" expanded="true" />
-            <element signature="e#1547#1591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Formularios.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
@@ -1044,11 +1135,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Teste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/Algoritimos/Uteis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#311#1" expanded="true" />
+            <element signature="e#335#357#0" expanded="true" />
+            <element signature="e#433#489#0" expanded="true" />
+            <element signature="e#433#489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/models/Compromissos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Compromissos#1;class#Compromissos#0" expanded="false" />
+            <element signature="method#Compromissos#2;class#Compromissos#0" expanded="false" />
+            <element signature="method#mostrar#0;class#Compromissos#0" expanded="false" />
+            <element signature="e#1161#1192#0" expanded="true" />
+            <element signature="e#1161#1192#0" expanded="true" />
+            <element signature="e#1161#1192#0" expanded="true" />
+            <element signature="method#retornarDiaDaSemana#0;class#Compromissos#0" expanded="false" />
+            <element signature="e#1871#1938#0" expanded="true" />
+            <element signature="e#1871#1938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#compromissosDoMes#0;class#FormularioAgenda#0" expanded="false" />
+            <element signature="e#593#615#1" expanded="true" />
+            <element signature="e#622#638#0" expanded="true" />
+            <element signature="e#622#638#0" expanded="true" />
+            <element signature="e#677#693#0" expanded="true" />
+            <element signature="e#677#693#0" expanded="true" />
+            <element signature="e#734#750#0" expanded="true" />
+            <element signature="e#734#750#0" expanded="true" />
+            <element signature="e#787#803#0" expanded="true" />
+            <element signature="e#787#803#0" expanded="true" />
+            <element signature="e#840#856#0" expanded="true" />
+            <element signature="e#840#856#0" expanded="true" />
+            <element signature="e#892#908#0" expanded="true" />
+            <element signature="e#892#908#0" expanded="true" />
+            <element signature="e#945#961#0" expanded="true" />
+            <element signature="e#945#961#0" expanded="true" />
+            <element signature="e#998#1014#0" expanded="true" />
+            <element signature="e#998#1014#0" expanded="true" />
+            <element signature="e#1052#1068#0" expanded="true" />
+            <element signature="e#1052#1068#0" expanded="true" />
+            <element signature="e#1108#1124#0" expanded="true" />
+            <element signature="e#1108#1124#0" expanded="true" />
+            <element signature="e#1163#1179#0" expanded="true" />
+            <element signature="e#1163#1179#0" expanded="true" />
+            <element signature="e#1219#1235#0" expanded="true" />
+            <element signature="e#1219#1235#0" expanded="true" />
+            <element signature="e#1288#1325#0" expanded="true" />
+            <element signature="e#1288#1325#0" expanded="true" />
+            <element signature="e#1625#1676#1" expanded="true" />
+            <element signature="e#1679#1722#1" expanded="true" />
+            <element signature="e#1699#1721#0" expanded="true" />
+            <element signature="e#1725#1771#1" expanded="true" />
+            <element signature="e#1779#1792#1" expanded="true" />
+            <element signature="e#1774#1959#0" expanded="true" />
+            <element signature="e#1774#1959#0" expanded="true" />
+            <element signature="e#1774#1959#0" expanded="true" />
+            <element signature="e#1814#1834#0" expanded="true" />
+            <element signature="e#1814#1834#0" expanded="true" />
+            <element signature="e#1865#1885#0" expanded="true" />
+            <element signature="e#1865#1885#0" expanded="true" />
+            <element signature="e#1919#1939#0" expanded="true" />
+            <element signature="e#1919#1939#0" expanded="true" />
+            <element signature="method#compromissosDoDia#0;class#FormularioAgenda#0" expanded="false" />
+            <element signature="e#2660#2704#0" expanded="true" />
+            <element signature="e#2660#2704#0" expanded="true" />
+            <element signature="e#2660#2704#0" expanded="true" />
+            <element signature="e#2660#2704#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

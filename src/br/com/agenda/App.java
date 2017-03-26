@@ -33,7 +33,7 @@ public class App {
                                 FormularioAgenda.compromissosDoMes(scanner, c);
                                 break;
                             case 2:
-
+                                FormularioAgenda.compromissosDaSemana(c);
                                 break;
                             case 3:
                                 FormularioAgenda.compromissosDoDia(scanner, c);
