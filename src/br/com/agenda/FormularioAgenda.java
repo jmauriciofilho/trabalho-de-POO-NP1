@@ -57,9 +57,10 @@ public class FormularioAgenda {
 	public static void compromissosDaSemana(ControleCompromisso c){
 		List<Compromissos> compromissoss = c.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
-		int hoje = calendar.get(Calendar.DAY_OF_WEEK);
-		for (int i = hoje; i <= 7; i++){
-			if (compromissoss.get(i).retornarDiaDaSemana() >= 1 && compromissoss.get(i).retornarDiaDaSemana() <= 7){
+		int numeroSemana = calendar.get(Calendar.WEEK_OF_MONTH);
+		for (int i = 0; i < compromissoss.size(); i++){
+			if (compromissoss.get(i).retornarNumeroDaSemana() == numeroSemana){
+				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
 				compromissoss.get(i).mostrar();
 			}
 		}
