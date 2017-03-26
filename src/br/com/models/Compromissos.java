@@ -97,6 +97,36 @@ public class Compromissos {
 
     }
 
+    public int retornarNumeroDoDiaDoAno(){
+        try {
+            Calendar calendar = Calendar.getInstance();
+            SimpleDateFormat simpleFormat = new SimpleDateFormat("dd/MM/yyyy");
+            calendar.setTime(simpleFormat.parse(this.dataInicio.mostrarData()));
+            int numeroDoDiaDoAno = calendar.get(Calendar.DAY_OF_YEAR);
+            return numeroDoDiaDoAno;
+
+        }catch (ParseException e){
+            e.printStackTrace();
+            return 0;
+        }
+
+    }
+
+    public int retornarNumeroMes(){
+        try {
+            Calendar calendar = Calendar.getInstance();
+            SimpleDateFormat simpleFormat = new SimpleDateFormat("dd/MM/yyyy");
+            calendar.setTime(simpleFormat.parse(this.dataInicio.mostrarData()));
+            int mes = calendar.get(Calendar.MONTH);
+            return mes;
+
+        }catch (ParseException e){
+            e.printStackTrace();
+            return 0;
+        }
+
+    }
+
     public int getCodigo() {
         return codigo;
     }

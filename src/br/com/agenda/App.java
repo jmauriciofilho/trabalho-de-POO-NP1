@@ -4,8 +4,6 @@ import br.com.controle.ControleAniversario;
 import br.com.controle.ControleCompromisso;
 import br.com.controle.ControleFeriados;
 import br.com.controle.ControleTarefas;
-import br.com.models.Compromissos;
-import br.com.models.Tarefas;
 
 import java.util.Scanner;
 
@@ -30,13 +28,13 @@ public class App {
                         opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
-                                FormularioAgenda.compromissosDoMes(scanner, c);
+                                ModoAgenda.mostrarCompromissosDoMes(c);
                                 break;
                             case 2:
-                                FormularioAgenda.compromissosDaSemana(c);
+                                ModoAgenda.mostrarCompromissosDaSemana(c);
                                 break;
                             case 3:
-                                FormularioAgenda.compromissosDoDia(scanner, c);
+                                ModoAgenda.mostrarCompromissosDoDia(c);
                                 break;
                             case 4:
                                 System.out.println("Menu anterior.");

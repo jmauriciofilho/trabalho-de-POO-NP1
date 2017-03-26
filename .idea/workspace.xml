@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="181a51ba-de1c-48fc-ab5c-4b49073aab7f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/Algoritimos/Uteis.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/algoritimos/Uteis.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/FormularioAgenda.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/FormularioAgenda.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/FormularioAgenda.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/ModoAgenda.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/App.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/agenda/App.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/models/Compromissos.class" afterPath="$PROJECT_DIR$/out/production/AgendaNP1POO/br/com/models/Compromissos.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/agenda/App.java" afterPath="$PROJECT_DIR$/src/br/com/agenda/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/models/Compromissos.java" afterPath="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,9 +58,10 @@
         <option value="$PROJECT_DIR$/src/br/com/agenda/Formularios.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/Teste.java" />
         <option value="$PROJECT_DIR$/src/br/com/Algoritimos/Uteis.java" />
-        <option value="$PROJECT_DIR$/src/br/com/agenda/App.java" />
-        <option value="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
         <option value="$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java" />
+        <option value="$PROJECT_DIR$/src/br/com/models/Compromissos.java" />
+        <option value="$PROJECT_DIR$/src/br/com/agenda/ModoAgenda.java" />
+        <option value="$PROJECT_DIR$/src/br/com/agenda/App.java" />
       </list>
     </option>
   </component>
@@ -629,12 +631,12 @@
       <workItem from="1490055294085" duration="526000" />
       <workItem from="1490356933657" duration="14605000" />
       <workItem from="1490463834831" duration="20261000" />
-      <workItem from="1490551453620" duration="2123000" />
+      <workItem from="1490551453620" duration="4052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76556000" />
+    <option name="totallyTimeSpent" value="78485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
@@ -660,9 +662,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Fluid" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -867,6 +869,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1122#1123#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,6 +887,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1016#1017#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -955,21 +965,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/agenda/Formularios.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
           <caret line="16" column="88" lean-forward="false" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
           <folding>
             <element signature="method#formCadastroCompromisso#0;class#Formularios#0" expanded="false" />
-            <element signature="e#1582#1615#1" expanded="true" />
+            <element signature="e#1582#1615#1" expanded="false" />
             <element signature="method#formEditarCompromisso#0;class#Formularios#0" expanded="false" />
             <element signature="method#formRemoverCompromisso#0;class#Formularios#0" expanded="false" />
             <element signature="method#formMostrarCompromissos#0;class#Formularios#0" expanded="false" />
@@ -997,39 +999,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/models/Compromissos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="254">
+          <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Compromissos#1;class#Compromissos#0" expanded="false" />
             <element signature="method#Compromissos#2;class#Compromissos#0" expanded="false" />
             <element signature="method#mostrar#0;class#Compromissos#0" expanded="false" />
             <element signature="method#retornarDiaDaSemana#0;class#Compromissos#0" expanded="false" />
-            <element signature="e#1994#2042#1" expanded="true" />
             <element signature="method#retornarNumeroDaSemana#0;class#Compromissos#0" expanded="false" />
-            <element signature="e#2930#2997#0" expanded="true" />
-            <element signature="e#2930#2997#0" expanded="true" />
-            <element signature="e#3011#3067#1" expanded="true" />
+            <element signature="method#retornarNumeroDoDiaDoAno#0;class#Compromissos#0" expanded="false" />
+            <element signature="method#retornarNumeroMes#0;class#Compromissos#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/FormularioAgenda.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/ModoAgenda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        <state relative-caret-position="212">
+          <caret line="66" column="48" lean-forward="false" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#compromissosDoMes#0;class#FormularioAgenda#0" expanded="false" />
-            <element signature="e#1784#2015#0" expanded="true" />
-            <element signature="e#1784#2015#0" expanded="true" />
-            <element signature="e#1784#2015#0" expanded="true" />
-            <element signature="e#1839#1859#0" expanded="true" />
-            <element signature="e#1839#1859#0" expanded="true" />
-            <element signature="e#1926#1946#0" expanded="true" />
-            <element signature="e#1926#1946#0" expanded="true" />
-            <element signature="method#compromissosDoDia#0;class#FormularioAgenda#0" expanded="false" />
+            <element signature="method#mostrarCompromissosDoMes#0;class#ModoAgenda#0" expanded="false" />
+            <element signature="e#423#462#1" expanded="true" />
+            <element signature="e#1109#1326#0" expanded="true" />
+            <element signature="e#1109#1326#0" expanded="true" />
+            <element signature="e#1109#1326#0" expanded="true" />
+            <element signature="method#mostrarCompromissosDaSemana#0;class#ModoAgenda#0" expanded="false" />
+            <element signature="e#1565#1796#0" expanded="true" />
+            <element signature="e#1565#1796#0" expanded="true" />
+            <element signature="e#1565#1796#0" expanded="true" />
+            <element signature="method#mostrarCompromissosDoDia#0;class#ModoAgenda#0" expanded="false" />
+            <element signature="e#1972#2020#1" expanded="true" />
+            <element signature="e#2023#2250#0" expanded="true" />
+            <element signature="e#2023#2250#0" expanded="true" />
+            <element signature="e#2023#2250#0" expanded="true" />
+            <marker date="1490555517384" expanded="false" signature="323:341" ph="var" />
+            <marker date="1490555517384" expanded="false" signature="1872:1890" ph="var" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/agenda/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
