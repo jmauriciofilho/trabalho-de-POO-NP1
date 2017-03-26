@@ -1,7 +1,11 @@
 package br.com.agenda;
 
 import br.com.controle.ControleCompromisso;
+import br.com.controle.ControleFeriados;
+import br.com.controle.ControleTarefas;
 import br.com.models.Compromissos;
+import br.com.models.Feriados;
+import br.com.models.Tarefas;
 
 import java.util.Calendar;
 import java.util.List;
@@ -12,8 +16,10 @@ import java.util.Scanner;
  */
 public class ModoAgenda {
 
-	public static void mostrarCompromissosDoMes(ControleCompromisso c){
+	public static void mostrarCompromissosDoMes(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf){
 		List<Compromissos> compromissoss = c.buscarTodos();
+		List<Tarefas> tarefass = ct.buscarTodos();
+		Feriados[] feriadoss = cf.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
 		int mes = calendar.get(Calendar.MONTH);
 		String nomeMes = null;
@@ -43,35 +49,85 @@ public class ModoAgenda {
 			nomeMes = "Dezembro";
 		}
 		System.out.println("==========" + nomeMes + "==========");
+		System.out.println("==========COMPROMISSOS=========");
 		for (int i = 0; i < compromissoss.size(); i++){
 			if (compromissoss.get(i).retornarNumeroMes() == mes){
 				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
 				compromissoss.get(i).mostrar();
 			}
 		}
+		System.out.println("=======TAREFAS========");
+		for (int i = 0; i < tarefass.size(); i++) {
+			if (tarefass.get(i).retornarNumeroMes() == mes){
+				System.out.println(tarefass.get(i).retornarDiaDaSemana());
+				tarefass.get(i).mostrar();
+			}
+		}
+		System.out.println("========FERIADOS========");
+		for (Feriados feriados: feriadoss) {
+			if (feriados.retornarNumeroMes() == mes){
+				System.out.println(feriados.retornarDiaDaSemana());
+				feriados.mostrar();
+			}
+		}
 
 	}
 
-	public static void mostrarCompromissosDaSemana(ControleCompromisso c){
+	public static void mostrarCompromissosDaSemana(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf){
 		List<Compromissos> compromissoss = c.buscarTodos();
+		List<Tarefas> tarefass = ct.buscarTodos();
+		Feriados[] feriadoss = cf.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
 		int numeroSemana = calendar.get(Calendar.WEEK_OF_MONTH);
+		System.out.println("==========COMPROMISSOS=========");
 		for (int i = 0; i < compromissoss.size(); i++){
 			if (compromissoss.get(i).retornarNumeroDaSemana() == numeroSemana){
 				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
 				compromissoss.get(i).mostrar();
 			}
 		}
+		System.out.println("=======TAREFAS========");
+		for (int i = 0; i < tarefass.size(); i++) {
+			if (tarefass.get(i).retornarNumeroDaSemana() == numeroSemana){
+				System.out.println(tarefass.get(i).retornarDiaDaSemana());
+				tarefass.get(i).mostrar();
+			}
+		}
+		System.out.println("========FERIADOS========");
+		for (Feriados feriado : feriadoss) {
+			if (feriado.retornarNumeroDaSemana() == numeroSemana){
+				System.out.println(feriado.retornarDiaDaSemana());
+				feriado.mostrar();
+
+			}
+		}
 	}
 
-	public static void mostrarCompromissosDoDia(ControleCompromisso c){
+	public static void mostrarCompromissosDoDia(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf){
 		List<Compromissos> compromissoss = c.buscarTodos();
+		List<Tarefas> tarefass = ct.buscarTodos();
+		Feriados[] feriadoss = cf.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
 		int numero = calendar.get(Calendar.DAY_OF_YEAR);
+		System.out.println("==========COMPROMISSOS=========");
 		for (int i = 0; i < compromissoss.size(); i++){
 			if (compromissoss.get(i).retornarNumeroDoDiaDoAno() == numero){
 				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
 				compromissoss.get(i).mostrar();
+			}
+		}
+		System.out.println("=======TAREFAS========");
+		for (int i = 0; i < tarefass.size(); i++) {
+			if (tarefass.get(i).retornarNumeroDoDiaDoAno() == numero){
+				System.out.println(tarefass.get(i).retornarDiaDaSemana());
+				tarefass.get(i).mostrar();
+			}
+		}
+		System.out.println("========FERIADOS========");
+		for (Feriados feriados:feriadoss) {
+			if (feriados.retornarNumeroDoDiaDoAno() == numero){
+				System.out.println(feriados.retornarDiaDaSemana());
+				feriados.mostrar();
 			}
 		}
 	}

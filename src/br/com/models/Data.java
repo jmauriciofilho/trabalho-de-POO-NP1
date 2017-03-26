@@ -9,7 +9,7 @@ public class Data {
 	private String diaDaSemana;
 	private String mes;
 	private int ano;
-	private int hora;
+	private String hora;
 
 	public Data(String  dia, String mes, int ano){
 		this.dia = dia;
@@ -17,7 +17,7 @@ public class Data {
 		this.ano = ano;
 	}
 
-	public Data(String  dia, String mes, int ano, int hora){
+	public Data(String  dia, String mes, int ano, String hora){
 		this.dia = dia;
 		this.mes = mes;
 		this.ano = ano;
@@ -32,7 +32,7 @@ public class Data {
 
 	}
 
-	public Data(String dia, String diaDaSemana, String mes, int ano, int hora){
+	public Data(String dia, String diaDaSemana, String mes, int ano, String hora){
 		this.dia = dia;
 		this.diaDaSemana = diaDaSemana;
 		this.mes = mes;
@@ -72,11 +72,11 @@ public class Data {
 		this.ano = ano;
 	}
 
-	public int getHora() {
+	public String getHora() {
 		return hora;
 	}
 
-	public void setHora(int hora) {
+	public void setHora(String hora) {
 		this.hora = hora;
 	}
 
