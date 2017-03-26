@@ -1,4 +1,4 @@
-package br.com.Algoritimos;
+package br.com.algoritimos;
 
 import br.com.models.Data;
 
