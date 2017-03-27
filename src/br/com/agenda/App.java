@@ -28,13 +28,13 @@ public class App {
                         opcao = scanner.nextInt();
                         switch (opcao){
                             case 1:
-                                ModoAgenda.mostrarCompromissosDoMes(c, ct, cf);
+                                ModoAgenda.mostrarCompromissosDoMes(c, ct, cf, ca);
                                 break;
                             case 2:
-                                ModoAgenda.mostrarCompromissosDaSemana(c, ct, cf);
+                                ModoAgenda.mostrarCompromissosDaSemana(c, ct, cf, ca);
                                 break;
                             case 3:
-                                ModoAgenda.mostrarCompromissosDoDia(c, ct, cf);
+                                ModoAgenda.mostrarCompromissosDoDia(c, ct, cf, ca);
                                 break;
                             case 4:
                                 System.out.println("Menu anterior.");
