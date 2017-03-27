@@ -2,7 +2,16 @@ package br.com.controle;
 
 import br.com.models.Compromissos;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+>>>>>>> 15b88e62077950ed4c7b89a6eccaf2096c00f147
 import java.util.List;
 
 /**
@@ -11,12 +20,22 @@ import java.util.List;
 public class ControleCompromisso {
 
 	private List<Compromissos> compromissos;
+<<<<<<< HEAD
     private int posicao = 0;
+=======
+	private int posicao = 0;
+
+>>>>>>> 15b88e62077950ed4c7b89a6eccaf2096c00f147
 
 	public ControleCompromisso(){
 		compromissos = new ArrayList<>();
 	}
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 15b88e62077950ed4c7b89a6eccaf2096c00f147
 	public String buscar(int codigo){
 
 		for (int i = 0; i < compromissos.size(); i++) {
@@ -57,4 +76,9 @@ public class ControleCompromisso {
 	public List<Compromissos> buscarTodos(){
 		return compromissos;
 	}
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 15b88e62077950ed4c7b89a6eccaf2096c00f147
