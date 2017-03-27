@@ -26,29 +26,29 @@ public class ModoAgenda {
 		Calendar calendar = Calendar.getInstance();
 		int mes = calendar.get(Calendar.MONTH);
 		String nomeMes = null;
-		if (mes == 1){
+		if (mes == 0){
 			nomeMes = "Janeiro";
-		}else if (mes == 2){
+		}else if (mes == 1){
 			nomeMes = "Fevereiro";
-		}else if (mes == 3){
+		}else if (mes == 2){
 			nomeMes = "Março";
-		}else if (mes == 4){
+		}else if (mes == 3){
 			nomeMes = "Abril";
-		}else if (mes == 5){
+		}else if (mes == 4){
 			nomeMes = "Maio";
-		}else if (mes == 6){
+		}else if (mes == 5){
 			nomeMes = "Junho";
-		}else if (mes == 7){
+		}else if (mes == 6){
 			nomeMes = "Julho";
-		}else if (mes == 8){
+		}else if (mes == 7){
 			nomeMes = "Agosto";
-		}else if (mes == 9){
+		}else if (mes == 8){
 			nomeMes = "Setembro";
-		}else if (mes == 10){
+		}else if (mes == 9){
 			nomeMes = "Outubro";
-		}else if (mes == 11){
+		}else if (mes == 10){
 			nomeMes = "Novembro";
-		}else if (mes == 12){
+		}else if (mes == 11){
 			nomeMes = "Dezembro";
 		}
 		System.out.println("==========" + nomeMes + "==========");

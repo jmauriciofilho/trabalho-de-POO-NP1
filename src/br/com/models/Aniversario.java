@@ -29,7 +29,7 @@ public class Aniversario {
 
 	public void mostrar(){
 		System.out.println("=Aniversariante: " + getNomeAniversariante());
-		System.out.println("=Data: " + getData());
+		System.out.println("=Data: " + data.mostrarData());
 		System.out.println("=Data da Festa: " + getDataFesta());
 		System.out.println("=Hora da Festa: " + getHoraFesta());
 		System.out.println("=======================================");

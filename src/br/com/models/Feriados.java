@@ -21,7 +21,7 @@ public class Feriados {
 
 	public void mostrar(){
 		System.out.println("=Nome: " + getNome());
-		System.out.println("=Data: " + getData());
+		System.out.println("=Data: " + data.mostrarData());
 		if (isNacional()){
 			System.out.println("=Feriado Nacional.");
 		}
