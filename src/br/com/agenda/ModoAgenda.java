@@ -1,8 +1,10 @@
 package br.com.agenda;
 
+import br.com.controle.ControleAniversario;
 import br.com.controle.ControleCompromisso;
 import br.com.controle.ControleFeriados;
 import br.com.controle.ControleTarefas;
+import br.com.models.Aniversario;
 import br.com.models.Compromissos;
 import br.com.models.Feriados;
 import br.com.models.Tarefas;
@@ -16,10 +18,11 @@ import java.util.Scanner;
  */
 public class ModoAgenda {
 
-	public static void mostrarCompromissosDoMes(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf){
+	public static void mostrarCompromissosDoMes(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf, ControleAniversario ca){
 		List<Compromissos> compromissoss = c.buscarTodos();
 		List<Tarefas> tarefass = ct.buscarTodos();
 		Feriados[] feriadoss = cf.buscarTodos();
+		List<Aniversario> aniversarios = ca.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
 		int mes = calendar.get(Calendar.MONTH);
 		String nomeMes = null;
@@ -70,13 +73,21 @@ public class ModoAgenda {
 				feriados.mostrar();
 			}
 		}
+		System.out.println("=======ANIVERSÁRIOS=======");
+		for (Aniversario aniversario:aniversarios) {
+			if (aniversario.retornarNumeroMes() == mes){
+				System.out.println(aniversario.retornarDiaDaSemana());
+				aniversario.mostrar();
+			}
+		}
 
 	}
 
-	public static void mostrarCompromissosDaSemana(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf){
+	public static void mostrarCompromissosDaSemana(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf, ControleAniversario ca){
 		List<Compromissos> compromissoss = c.buscarTodos();
 		List<Tarefas> tarefass = ct.buscarTodos();
 		Feriados[] feriadoss = cf.buscarTodos();
+		List<Aniversario> aniversarios = ca.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
 		int numeroSemana = calendar.get(Calendar.WEEK_OF_MONTH);
 		System.out.println("==========COMPROMISSOS=========");
@@ -101,12 +112,20 @@ public class ModoAgenda {
 
 			}
 		}
+		System.out.println("=======ANIVERSÁRIOS=======");
+		for (Aniversario aniversario : aniversarios) {
+			if (aniversario.retornarNumeroDaSemana() == numeroSemana){
+				System.out.println(aniversario.retornarDiaDaSemana());
+				aniversario.mostrar();
+			}
+		}
 	}
 
-	public static void mostrarCompromissosDoDia(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf){
+	public static void mostrarCompromissosDoDia(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf, ControleAniversario ca){
 		List<Compromissos> compromissoss = c.buscarTodos();
 		List<Tarefas> tarefass = ct.buscarTodos();
 		Feriados[] feriadoss = cf.buscarTodos();
+		List<Aniversario> aniversarios = ca.buscarTodos();
 		Calendar calendar = Calendar.getInstance();
 		int numero = calendar.get(Calendar.DAY_OF_YEAR);
 		System.out.println("==========COMPROMISSOS=========");
@@ -128,6 +147,13 @@ public class ModoAgenda {
 			if (feriados.retornarNumeroDoDiaDoAno() == numero){
 				System.out.println(feriados.retornarDiaDaSemana());
 				feriados.mostrar();
+			}
+		}
+		System.out.println("=======ANIVERSÁRIOS=======");
+		for (Aniversario aniversario:aniversarios) {
+			if (aniversario.retornarNumeroDoDiaDoAno() == numero){
+				System.out.println(aniversario.retornarDiaDaSemana());
+				aniversario.mostrar();
 			}
 		}
 	}
