@@ -31,10 +31,12 @@ public class App {
                                 ModoAgenda.mostrarCompromissosDoMes(c, ct, cf, ca);
                                 break;
                             case 2:
-                                ModoAgenda.mostrarCompromissosDaSemana(c, ct, cf, ca);
+                                ModoAgenda.mostrarCompromissosDoMes(c, ct, cf, ca);
+//                                ModoAgenda.mostrarCompromissosDaSemana(c, ct, cf, ca);
                                 break;
                             case 3:
-                                ModoAgenda.mostrarCompromissosDoDia(c, ct, cf, ca);
+                                ModoAgenda.mostrarCompromissosDoMes(c, ct, cf, ca);
+//                                ModoAgenda.mostrarCompromissosDoDia(c, ct, cf, ca);
                                 break;
                             case 4:
                                 System.out.println("Menu anterior.");
