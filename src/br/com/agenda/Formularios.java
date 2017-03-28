@@ -35,35 +35,35 @@ public class Formularios {
 			compromissos = new Compromissos(codigo, titulo, descricao, data, diaInteiro);
 			return c.criar(compromissos);
 		}
-
-		System.out.println("Informe a data que o compromisso se iniciara");
-		System.out.println("Favor informar no formato(dd/mm/aaaa):");
-		String dtInicio = scanner.next();
-		System.out.println("Informe a hora que compromisso se iniciara");
-		System.out.println("Favor informar no formato(hh:mm):");
+		else {
+			System.out.println("Informe a data que o compromisso se iniciara");
+			System.out.println("Favor informar no formato(dd/mm/aaaa):");
+			String dtInicio = scanner.next();
+			System.out.println("Informe a hora que compromisso se iniciara");
+			System.out.println("Favor informar no formato(hh:mm):");
 //		String horaMinInicial = scanner.next();
-		dtInicio = dtInicio + " " + scanner.next();
-		System.out.println("Informe a data de termino do compromisso");
-		System.out.println("Favor informar no formato(dd/mm/aaaa):");
-		String  dtFinal = scanner.next();
-		System.out.println("Informe a hora de termino do compromisso:");
-		System.out.println("Favor informar no formato(hh:mm):");
+			dtInicio = dtInicio + " " + scanner.next();
+			System.out.println("Informe a data de termino do compromisso");
+			System.out.println("Favor informar no formato(dd/mm/aaaa):");
+			String dtFinal = scanner.next();
+			System.out.println("Informe a hora de termino do compromisso:");
+			System.out.println("Favor informar no formato(hh:mm):");
 //		String horaMinFinal = scanner.next();
-		dtFinal = dtFinal + " " + scanner.next();
-		compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
-		return c.criar(compromissos);
-
+			dtFinal = dtFinal + " " + scanner.next();
+			compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
+			return c.criar(compromissos);
+		}
 	}
 
 	public static void formEditarCompromisso(Scanner scanner, ControleCompromisso c){
 		System.out.println("Informe o código do compromisso a ser editado:");
 		int codigo = scanner.nextInt();
-		System.out.println("Informe o titulo:");
+		System.out.println("Informe o novo titulo:");
 		scanner.nextLine();
 		String titulo = scanner.nextLine();
-		System.out.println("Informe a descrição:");
+		System.out.println("Informe a nova descrição:");
 		String descricao = scanner.nextLine();
-		System.out.println("Informe a duração:");
+		System.out.println("Informe a nova duração:");
 		System.out.println("Deseja que dure o dia inteiro? Sim ou Não");
 		String duracao = scanner.nextLine().toUpperCase();
 		boolean diaInteiro = false;
@@ -75,24 +75,24 @@ public class Formularios {
 			String data = scanner.nextLine();
 			compromissos = new Compromissos(codigo, titulo, descricao, data, diaInteiro);
 			c.editar(compromissos);
-		}
-		System.out.println("Informe a data que o compromisso se iniciara");
-		System.out.println("Favor informar no formato DD/MM/AAAA:");
-		String dtInicio = scanner.next();
-		System.out.println("Informe a hora que compromisso se iniciara");
-		System.out.println("Favor informar no formato(hh:mm):");
+		} else {
+			System.out.println("Informe a data que o compromisso se iniciara");
+			System.out.println("Favor informar no formato DD/MM/AAAA:");
+			String dtInicio = scanner.next();
+			System.out.println("Informe a hora que compromisso se iniciara");
+			System.out.println("Favor informar no formato(hh:mm):");
 //		String horaMinInicial = scanner.next();
-		dtInicio = dtInicio + " " + scanner.next();
-		System.out.println("Informe a data de termino do compromisso");
-		System.out.println("Favor informar no formato DD/MM/AAAA:");
-		String  dtFinal = scanner.next();
-		System.out.println("Informe a hora de termino do compromisso:");
-		System.out.println("Favor informar no formato(hh:mm):");
+			dtInicio = dtInicio + " " + scanner.next();
+			System.out.println("Informe a data de termino do compromisso");
+			System.out.println("Favor informar no formato DD/MM/AAAA:");
+			String dtFinal = scanner.next();
+			System.out.println("Informe a hora de termino do compromisso:");
+			System.out.println("Favor informar no formato(hh:mm):");
 //		String horaMinFinal = scanner.next();
-		dtFinal = dtFinal + " " + scanner.next();
-		compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
-		c.editar(compromissos);
-
+			dtFinal = dtFinal + " " + scanner.next();
+			compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
+			c.editar(compromissos);
+		}
 	}
 
 	public static String formRemoverCompromisso(Scanner scanner, ControleCompromisso c){
