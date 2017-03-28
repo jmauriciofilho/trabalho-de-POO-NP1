@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by mauricio and zeky on 08/03/17.
+ * Created by mauricio and on 08/03/17.
  */
 public class ControleCompromisso {
 

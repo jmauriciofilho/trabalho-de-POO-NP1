@@ -1,10 +1,6 @@
 package br.com.models;
 
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 /**
  * Created by mauricio and zeky on 11/03/17.
  */
@@ -19,12 +15,12 @@ public class Aniversario {
 		this.codigo = codigo;
 	}
 
-	public Aniversario(int codigo, String nomeAniversariante, String data, String dataFesta, String horaFesta) {
+	public Aniversario(int codigo, String nomeAniversariante, String dataNiver, String dataFesta, String horaFesta) {
 		this.codigo = codigo;
 		this.nomeAniversariante = nomeAniversariante;
-		this.dataNiver.setDataDiaInteiro(data);
-		this.dataFesta.setDataDiaInteiro(dataFesta);
-//		this.dataFesta.setApenasHora(horaFesta);
+		this.dataNiver.setApenasData(dataNiver);
+		this.dataFesta.setApenasData(dataFesta);
+		this.dataFesta.setApenasHora(horaFesta);
 	}
 
 	public void mostrar(){
@@ -51,4 +47,19 @@ public class Aniversario {
 		this.nomeAniversariante = nomeAniversariante;
 	}
 
+	public PadraoData getDataNiver() {
+		return dataNiver;
+	}
+
+	public void setDataNiver(PadraoData dataNiver) {
+		this.dataNiver = dataNiver;
+	}
+
+	public PadraoData getDataFesta() {
+		return dataFesta;
+	}
+
+	public void setDataFesta(PadraoData dataFesta) {
+		this.dataFesta = dataFesta;
+	}
 }

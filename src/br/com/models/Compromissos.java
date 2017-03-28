@@ -6,8 +6,8 @@ public class Compromissos {
     private String titulo;
     private String descricao;
     private boolean diaInteiro;
-    PadraoData dataCompleta = new PadraoData();
-    PadraoData dtFinal = new PadraoData();
+    private PadraoData dataCompleta = new PadraoData();
+    private PadraoData dtFinal = new PadraoData();
 
     public Compromissos(int codigo){
         this.codigo = codigo;
@@ -18,7 +18,7 @@ public class Compromissos {
         this.titulo = titulo;
         this.descricao = descricao;
         this.diaInteiro = diaInteiro;
-        this.dataCompleta.setDataDiaInteiro(dataDiaInteiro);
+        this.dataCompleta.setApenasData(dataDiaInteiro);
     }
 
 
@@ -80,5 +80,19 @@ public class Compromissos {
     }
 
 
+    public PadraoData getDataCompleta() {
+        return dataCompleta;
+    }
 
+    public void setDataCompleta(PadraoData dataCompleta) {
+        this.dataCompleta = dataCompleta;
+    }
+
+    public PadraoData getDtFinal() {
+        return dtFinal;
+    }
+
+    public void setDtFinal(PadraoData dtFinal) {
+        this.dtFinal = dtFinal;
+    }
 }

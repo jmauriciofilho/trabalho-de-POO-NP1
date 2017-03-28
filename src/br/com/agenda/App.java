@@ -8,7 +8,7 @@ import br.com.controle.ControleTarefas;
 import java.util.Scanner;
 
 /**
- * Created by mauricio on 08/03/17.
+ * Created by mauricio and zeky on 08/03/17.
  */
 public class App {
     public static void main(String[] args) {

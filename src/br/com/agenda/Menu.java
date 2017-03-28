@@ -1,7 +1,7 @@
 package br.com.agenda;
 
 /**
- * Created by mauricio and zeky on 11/03/17.
+ * Created by mauricio and on 11/03/17.
  */
 public class Menu {
 

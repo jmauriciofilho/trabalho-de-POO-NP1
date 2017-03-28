@@ -6,13 +6,16 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+/**
+ * Created by zeky and mauricio on 11/03/17.
+ */
 public class PadraoData {
     private Calendar dtCompleta = Calendar.getInstance();
 	private DateFormat 	dtHoraForm = new SimpleDateFormat("dd/MM/yyyy HH:mm", new Locale("pt","br"));
 	private DateFormat 	dtForm = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt","br"));
+	private DateFormat horaForm = new SimpleDateFormat("HH:mm");
 	
-	
-	public void setDataDiaInteiro(String data){
+	public void setApenasData(String data){
 		try {
             dtCompleta.setTime(dtForm.parse(data));
         } catch (ParseException e) {
@@ -29,9 +32,16 @@ public class PadraoData {
             e.getStackTrace();
         }
 	}
-	
+
 	public String getApenasData(){
 		return dtForm.format(dtCompleta.getTime());
+	}
+
+	public void setApenasHora(String horasMin){
+		int h = Integer.parseInt(horasMin.substring(0,1));
+		int m = Integer.parseInt(horasMin.substring(3,4));
+		this.dtCompleta.set(Calendar.HOUR, h);
+		this.dtCompleta.set(Calendar.MINUTE, m);
 	}
 	
 	public String getApenasHora(){
@@ -73,6 +83,7 @@ public class PadraoData {
 		}
 		return nomeMes;
 	}
+
 
 	
 }

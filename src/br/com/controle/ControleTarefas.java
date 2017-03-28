@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by mauricio on 11/03/17.
+ * Created by mauricio and zeky on 11/03/17.
  */
 public class ControleTarefas {
 	private List<Tarefas> tarefas;
