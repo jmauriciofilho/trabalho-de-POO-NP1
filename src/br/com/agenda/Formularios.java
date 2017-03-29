@@ -25,7 +25,7 @@ public class Formularios {
 		System.out.println("Informe a duração:");
 		System.out.println("Deseja que dure o dia inteiro? Sim ou Não");
 		String duracao = scanner.nextLine().toUpperCase();
-		boolean diaInteiro = false;
+		boolean diaInteiro;
 		Compromissos compromissos;
 		if (duracao.equals("SIM")){
 			diaInteiro = true;
@@ -41,15 +41,15 @@ public class Formularios {
 			String dtInicio = scanner.next();
 			System.out.println("Informe a hora que compromisso se iniciara");
 			System.out.println("Favor informar no formato(hh:mm):");
-//		String horaMinInicial = scanner.next();
-			dtInicio = dtInicio + " " + scanner.next();
+			String horaMinInicial = scanner.next();
+			dtInicio = dtInicio + " " + horaMinInicial;
 			System.out.println("Informe a data de termino do compromisso");
 			System.out.println("Favor informar no formato(dd/mm/aaaa):");
 			String dtFinal = scanner.next();
 			System.out.println("Informe a hora de termino do compromisso:");
 			System.out.println("Favor informar no formato(hh:mm):");
-//		String horaMinFinal = scanner.next();
-			dtFinal = dtFinal + " " + scanner.next();
+			String horaMinFinal = scanner.next();
+			dtFinal = dtFinal + " " + horaMinFinal;
 			compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
 			return c.criar(compromissos);
 		}
@@ -81,15 +81,15 @@ public class Formularios {
 			String dtInicio = scanner.next();
 			System.out.println("Informe a hora que compromisso se iniciara");
 			System.out.println("Favor informar no formato(hh:mm):");
-//		String horaMinInicial = scanner.next();
-			dtInicio = dtInicio + " " + scanner.next();
+			String horaMinInicial = scanner.next();
+			dtInicio = dtInicio + " " + horaMinInicial;
 			System.out.println("Informe a data de termino do compromisso");
 			System.out.println("Favor informar no formato DD/MM/AAAA:");
 			String dtFinal = scanner.next();
 			System.out.println("Informe a hora de termino do compromisso:");
 			System.out.println("Favor informar no formato(hh:mm):");
-//		String horaMinFinal = scanner.next();
-			dtFinal = dtFinal + " " + scanner.next();
+			String horaMinFinal = scanner.next();
+			dtFinal = dtFinal + " " + horaMinFinal;
 			compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
 			c.editar(compromissos);
 		}

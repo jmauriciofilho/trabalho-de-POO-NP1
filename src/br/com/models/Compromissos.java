@@ -37,11 +37,12 @@ public class Compromissos {
         System.out.println("=Título: " + getTitulo());
         System.out.println("=Descrição: " + getDescricao());
         if (isDiaInteiro()){
+            System.out.println("===========Dia: "+ dataCompleta.getApenasData() +" ===========");
             System.out.println("=Evento programado para o dia inteiro.");
         }else {
             System.out.println("=Duração: \n" +
                     "=De: "+ dataCompleta.getApenasData() + " às " + dataCompleta.getApenasHora()+
-                    "=Até: "+ dtFinal.getApenasData()+ " às " + dtFinal.getApenasHora());
+                    "\n=Até: "+ dtFinal.getApenasData()+ " às " + dtFinal.getApenasHora());
         }
 
         System.out.println("=================================================");

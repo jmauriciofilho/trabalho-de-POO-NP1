@@ -3,6 +3,7 @@ package br.com.models;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -89,9 +90,6 @@ public class PadraoData {
 		return this.dtCompleta.getWeekYear();
 	}
 
-	public void setDataDate(Date dataDate){
-		this.dtCompleta.setTime(dataDate);
-	}
 
 
 }
