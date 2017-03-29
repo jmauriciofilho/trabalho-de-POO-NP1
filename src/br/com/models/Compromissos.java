@@ -1,5 +1,8 @@
 package br.com.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Compromissos {
 
     private int codigo;
@@ -8,6 +11,8 @@ public class Compromissos {
     private boolean diaInteiro;
     private PadraoData dataCompleta = new PadraoData();
     private PadraoData dtFinal = new PadraoData();
+    private List<Compromissos> repeticoes = new ArrayList<>();
+
 
     public Compromissos(int codigo){
         this.codigo = codigo;
@@ -94,5 +99,16 @@ public class Compromissos {
 
     public void setDtFinal(PadraoData dtFinal) {
         this.dtFinal = dtFinal;
+    }
+
+    public void repetirCompromissos(Compromissos c, String escolhaDiaMesAno, int repeticao) {
+        Compromissos[] datasRepeticao = new Compromissos[repeticao];
+        this.repeticoes.add(c);
+        int repetir = 1;
+
+        for (int i = 1; i < datasRepeticao.length; i++) {
+            c.getDataCompleta().repetirData(escolhaDiaMesAno, repetir++);
+            this.repeticoes.add(c);
+        }
     }
 }
