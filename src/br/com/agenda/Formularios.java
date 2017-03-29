@@ -25,6 +25,8 @@ public class Formularios {
 		System.out.println("Informe a duração:");
 		System.out.println("Deseja que dure o dia inteiro? Sim ou Não");
 		String duracao = scanner.nextLine().toUpperCase();
+		System.out.println("O Compromisso terá repetições? Sim ou Não");
+		String repetir = scanner.nextLine().toUpperCase();
 		boolean diaInteiro;
 		Compromissos compromissos;
 		if (duracao.equals("SIM")){
@@ -33,6 +35,15 @@ public class Formularios {
 			System.out.println("Favor informar no formato DD/MM/AAAA:");
 			String data = scanner.nextLine();
 			compromissos = new Compromissos(codigo, titulo, descricao, data, diaInteiro);
+
+//			if(repetir.equals("SIM")){
+//				System.out.println("Informe o que será repetido: DIA, MES ou ANO");
+//				String escolhaDiaMesAno = scanner.nextLine();
+//				System.out.println("Informe o número de vezes: Ex.:1, 2, 4...");
+//				int repeticao = scanner.nextInt();
+//				compromissos
+//			}
+
 			return c.criar(compromissos);
 		}
 		else {
@@ -51,6 +62,12 @@ public class Formularios {
 			String horaMinFinal = scanner.next();
 			dtFinal = dtFinal + " " + horaMinFinal;
 			compromissos = new Compromissos(codigo, titulo, descricao, dtInicio, dtFinal);
+//			if(repetir.equals("SIM")){
+//				System.out.println("Informe o que será repetido: DIA, MES ou ANO");
+//				String escolhaDiaMesAno = scanner.nextLine();
+//				System.out.println("Informe o número de vezes: Ex.:1, 2, 4...");
+//				int repeticao = scanner.nextInt();
+//			}
 			return c.criar(compromissos);
 		}
 	}
