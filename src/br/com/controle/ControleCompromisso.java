@@ -57,4 +57,18 @@ public class ControleCompromisso {
 	public List<Compromissos> buscarTodos(){
 		return compromissos;
 	}
+
+	public Compromissos [] repetirCompromissos(Compromissos c, String escolhaDiaMesAno, int repeticao){
+		Compromissos [] datasRepeticao = new Compromissos[repeticao];
+		datasRepeticao[0] = c;
+		int repetir=1;
+
+		for (int i = 1; i < datasRepeticao.length; i ++) {
+			datasRepeticao[0].getDataCompleta().repetirData(escolhaDiaMesAno, repetir++);
+			datasRepeticao[i] = datasRepeticao[0];
+		}
+		datasRepeticao[0] = c;
+		return datasRepeticao;
+	}
+
 }
