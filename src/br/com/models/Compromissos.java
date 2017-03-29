@@ -29,7 +29,6 @@ public class Compromissos {
         this.descricao = descricao;
         this.dataCompleta.setDataHora(dataHoraInicio);
         this.dtFinal.setDataHora(dataHoraFim);
-
     }
 
     public void mostrar(){

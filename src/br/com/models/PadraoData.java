@@ -90,6 +90,24 @@ public class PadraoData {
 		return this.dtCompleta.getWeekYear();
 	}
 
+	public void repetirData(String escolhaDiaMesAno, int repeticao){
+		int d=0, m=0, a=0;
+		if(escolhaDiaMesAno == "DIA"){
+			d=1;
+		}
+		if(escolhaDiaMesAno == "MES" || escolhaDiaMesAno == "MÊS"){
+			m = 1;
+		}
+		if (escolhaDiaMesAno == "ANO"){
+			a = 1;
+		}
+		if (escolhaDiaMesAno == "SEMANA"){
+			d = 7;
+		}
+
+		this.dtCompleta.set(dtCompleta.get(Calendar.YEAR) + a, dtCompleta.get(Calendar.MONTH) + m,
+				dtCompleta.get(Calendar.DAY_OF_MONTH)+ d);
+	}
 
 
 }
