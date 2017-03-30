@@ -27,7 +27,7 @@ public class PadraoData {
 	
 	public void setApenasData(String data){
 		try {
-            dtCompleta.setTime(dtForm.parse(data));
+            this.dtCompleta.setTime(dtForm.parse(data));
         } catch (ParseException e) {
             System.out.println("Formato errada de data/hora");
             e.getStackTrace();
@@ -36,7 +36,7 @@ public class PadraoData {
 	
 	public void setDataHora(String diaMesAnoHoraMin){
 		try {
-            dtCompleta.setTime(dtHoraForm.parse(diaMesAnoHoraMin));
+            this.dtCompleta.setTime(dtHoraForm.parse(diaMesAnoHoraMin));
         } catch (ParseException e) {
             System.out.println("Formato errada de data/hora");
             e.getStackTrace();
@@ -59,9 +59,8 @@ public class PadraoData {
 		this.dtCompleta.set(Calendar.MINUTE, m);
 	}
 
-
 	public String getApenasHora(){
-		return dtCompleta.get(Calendar.HOUR)+":"+ dtCompleta.get(Calendar.MINUTE);
+		return dtCompleta.get(Calendar.HOUR_OF_DAY)+":"+ dtCompleta.get(Calendar.MINUTE);
 	}
 
 	public String getDiaSemana(){
@@ -81,7 +80,7 @@ public class PadraoData {
 	
 	public String getMes(){
 		String nomeMes=null;
-		int mes = dtCompleta.get(Calendar.MONTH);
+		int mes = this.dtCompleta.get(Calendar.MONTH) +1;
 		switch(mes){
 		  case Calendar.JANUARY: nomeMes = "Janeiro";break;
 		  case Calendar.FEBRUARY: nomeMes = "Fevereiro";break;
@@ -105,8 +104,14 @@ public class PadraoData {
 		return this.dtCompleta.get(Calendar.MONTH);
 	}
 
-	public int getSemanaDoMes(){
-		return this.dtCompleta.getWeekYear();
+	public int getNumeroSemana(){
+
+		return this.dtCompleta.get(Calendar.DAY_OF_WEEK);
+	}
+
+	public int getNumeroDiadoAno(){
+
+		return this.dtCompleta.get(Calendar.DAY_OF_YEAR);
 	}
 
 	public void repetirData(int escolhaDiaMesAno, int repeticao){
@@ -124,10 +129,9 @@ public class PadraoData {
 		if (escolhaDiaMesAno == 4){
 			d = 7;
 		}
-//        for (int i = 0; i < repeticao; i++) {
+
 		this.dtCompleta.set(dtCompleta.get(Calendar.YEAR) + a, dtCompleta.get(Calendar.MONTH) + m,
 				dtCompleta.get(Calendar.DAY_OF_MONTH)+ d);
-//		}
 
 	}
 

@@ -31,8 +31,7 @@ public class App {
                                 ModoAgenda.mostrarCompromissosDoMes(c, ct, cf, ca);
                                 break;
                             case 2:
-                                ModoAgenda.mostrarCompromissosDoMes(c, ct, cf, ca);
-//                                ModoAgenda.mostrarCompromissosDaSemana(c, ct, cf, ca);
+                                ModoAgenda.mostrarCompromissosDaSemana(c, ct, cf, ca);
                                 break;
                             case 3:
                                 ModoAgenda.mostrarCompromissosDoDia(c, ct, cf, ca);

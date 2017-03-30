@@ -124,8 +124,14 @@ public class Formularios {
 
 	public static void formMostrarCompromissos(ControleCompromisso c){
 		List<Compromissos> compromissos = c.buscarTodos();
+
 		for (int i = 0; i < compromissos.size(); i++){
 			compromissos.get(i).mostrar();
+			if(compromissos.get(i).getRepeticoes()!= null){
+				for (int j = 0; j < compromissos.get(i).getRepeticoes().size(); j++) {
+					compromissos.get(i).getRepeticoes().get(j).mostrar();
+				}
+			}
 		}
 	}
 
