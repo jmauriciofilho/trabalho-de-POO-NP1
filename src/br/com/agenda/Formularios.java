@@ -24,7 +24,9 @@ public class Formularios {
 		String descricao = scanner.nextLine();
 		System.out.println("Informe a duração:");
 		System.out.println("Deseja que dure o dia inteiro? Sim ou Não");
-		String duracao = scanner.nextLine().toUpperCase();
+		String duracao = scanner.next().toUpperCase();
+		System.out.println("O Compromisso terá repetições? Sim ou Não");
+		String repetir = scanner.next().toUpperCase();
 		boolean diaInteiro = false;
 		if (duracao.equals("SIM")){
 			diaInteiro = true;
@@ -32,39 +34,41 @@ public class Formularios {
 		Compromissos compromissos;
 		if (diaInteiro){
 			System.out.println("Informe a data que o compromisso ocorre:");
-			String diaI = scanner.next();
-			System.out.println("Informe o mês que o compromisso ocorre:");
-			System.out.println("Por favor, digite o numero do mês.");
-			String mesI = scanner.next();
-			System.out.println("Informe o ano que o compromisso ocorre:");
-			int anoI = scanner.nextInt();
-			Data dataInicio = new Data(diaI, mesI, anoI);
+			System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+			String data = scanner.next();
+			Data dataInicio = new Data(data);
 			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, diaInteiro);
+			if(repetir.equals("SIM")){
+				System.out.println("Informe o que será repetido: DIA, MES ou ANO");
+				String escolhaDiaMesAno = scanner.next().toUpperCase();
+				System.out.println("Informe o número de vezes: Ex.:1, 2, 4...");
+				int repeticao = scanner.nextInt();
+				compromissos.repetirCompromissos(compromissos, escolhaDiaMesAno, repeticao);;
+			}
 			return c.criar(compromissos);
 		}else{
-			System.out.println("Informe a data que o compromisso se iniciara:");
-			String diaI = scanner.next();
-			System.out.println("Informe o mês que o compromisso se iniciara:");
-			System.out.println("Por favor, digite o numero do mes.");
-			String mesI = scanner.next();
-			System.out.println("Informe o ano que o compromisso se iniciara:");
-			int anoI = scanner.nextInt();
-			System.out.println("Informe a hora que compromisso se iniciara:");
+			System.out.println("Informe a data que o compromisso se inicia:");
+			System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+			String dataI = scanner.next();
+			System.out.println("Informe a hora que compromisso se inicia:");
 			System.out.println("Por favor informe nesse formato: HH:MM");
 			String horaI = scanner.next();
 			System.out.println("Informe a data de termino do compromisso:");
-			String  diaF = scanner.next();
-			System.out.println("Informe o mês de termino do compromisso:");
-			System.out.println("Por favor digite o numero do mes.");
-			String  mesF = scanner.next();
-			System.out.println("Informe o ano de termino do compromisso:");
-			int anoF = scanner.nextInt();
+			System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+			String dataF = scanner.next();
 			System.out.println("Informe a hora de termino do compromisso:");
 			System.out.println("Por favor informe nesse formato: HH:MM");
 			String horaF = scanner.next();
-			Data dataInicio = new Data(diaI, mesI, anoI, horaI);
-			Data dataFim = new Data(diaF, mesF, anoF, horaF);
+			Data dataInicio = new Data(dataI, horaI);
+			Data dataFim = new Data(dataF, horaF);
 			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, dataFim);
+			if(repetir.equals("SIM")){
+				System.out.println("Informe o que será repetido: DIA, MES ou ANO");
+				String escolhaDiaMesAno = scanner.next().toUpperCase();
+				System.out.println("Informe o número de vezes: Ex.:1, 2, 4...");
+				int repeticao = scanner.nextInt();
+				compromissos.repetirCompromissos(compromissos, escolhaDiaMesAno, repeticao);
+			}
 			return c.criar(compromissos);
 		}
 	}
@@ -86,40 +90,27 @@ public class Formularios {
 		}
 		Compromissos compromissos;
 		if (diaInteiro){
-			System.out.println("Informe a data que o compromisso ocorre::");
-			String diaI = scanner.next();
-			System.out.println("Informe o mês que o compromisso ocorre:");
-			System.out.println("Por favor digite o numero do mês.");
-			String mesI = scanner.next();
-			System.out.println("Informe o ano que o compromisso ocorre:");
-			int anoI = scanner.nextInt();
-			Data dataInicio = new Data(diaI, mesI, anoI);
+			System.out.println("Informe a data que o compromisso ocorre:");
+			System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+			String data = scanner.next();
+			Data dataInicio = new Data(data);
 			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, diaInteiro);
 			c.editar(compromissos);
 		}else{
-			System.out.println("Informe a data que o compromisso se iniciara:");
-			String diaI = scanner.next();
-			System.out.println("Informe o mês que o compromisso se iniciara:");
-			System.out.println("Por favor digite o numero do mes.");
-			String mesI = scanner.next();
-			System.out.println("Informe o ano que o compromisso se iniciara:");
-			int anoI = scanner.nextInt();
-			System.out.println("Informe a hora que compromisso se iniciara:");
+			System.out.println("Informe a data que o compromisso se inicia:");
+			System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+			String dataI = scanner.next();
+			System.out.println("Informe a hora que compromisso se inicia:");
 			System.out.println("Por favor informe nesse formato: HH:MM");
 			String horaI = scanner.next();
 			System.out.println("Informe a data de termino do compromisso:");
-			String  diaF = scanner.next();
-			System.out.println("Informe o mês de termino do compromisso:");
-			System.out.println("Por favor digite o numero do mes.");
-			String  mesF = scanner.nextLine();
-			System.out.println("Informe o ano de termino do compromisso:");
-			int anoF = scanner.nextInt();
+			System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+			String dataF = scanner.next();
 			System.out.println("Informe a hora de termino do compromisso:");
 			System.out.println("Por favor informe nesse formato: HH:MM");
 			String horaF = scanner.next();
-			int minutoF = scanner.nextInt();
-			Data dataInicio = new Data(diaI, mesI, anoI, horaI);
-			Data dataFim = new Data(diaF, mesF, anoF, horaF);
+			Data dataInicio = new Data(dataI, horaI);
+			Data dataFim = new Data(dataF, horaF);
 			compromissos = new Compromissos(codigo, titulo, descricao, dataInicio, dataFim);
 			c.editar(compromissos);
 		}
@@ -148,16 +139,11 @@ public class Formularios {
 		System.out.println("Informe a prioridade da tarefa: 1 - para alta, 2 - para média, 3 - para baixa");
 		int prioridade = scanner.nextInt();
 		System.out.println("Informe a data de conclusão da tarefa:");
-		System.out.println("Dia:");
-		String dia = scanner.next();
-		System.out.println("Mẽs: ");
-		System.out.println("Informe numero do mês.");
-		String mes = scanner.next();
-		System.out.println("Ano:");
-		int ano = scanner.nextInt();
-		Data data = new Data(dia, mes, ano);
+		System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+		String data = scanner.next();
+		Data dataconclusao = new Data(data);
 		boolean concluida = false;
-		Tarefas tarefa = new Tarefas(codigo, descricao, prioridade, data, concluida);
+		Tarefas tarefa = new Tarefas(codigo, descricao, prioridade, dataconclusao, concluida);
 		return ct.criar(tarefa);
 	}
 
@@ -170,16 +156,11 @@ public class Formularios {
 		System.out.println("Informe a prioridade da tarefa: 1 - para alta, 2 - para média, 3 - para baixa");
 		int prioridade = scanner.nextInt();
 		System.out.println("Informe a data de conclusão da tarefa:");
-		System.out.println("Dia:");
-		String dia = scanner.next();
-		System.out.println("Mẽs: ");
-		System.out.println("Informe numero do mês.");
-		String mes = scanner.next();
-		System.out.println("Ano:");
-		int ano = scanner.nextInt();
-		Data data = new Data(dia, mes, ano);
+		System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+		String data = scanner.next();
+		Data dataconclusao = new Data(data);
 		boolean concluida = false;
-		Tarefas tarefa = new Tarefas(codigo, descricao, prioridade, data, concluida);
+		Tarefas tarefa = new Tarefas(codigo, descricao, prioridade, dataconclusao, concluida);
 		ct.editar(tarefa);
 	}
 
@@ -229,18 +210,15 @@ public class Formularios {
 		scanner.nextLine();
 		String nome = scanner.nextLine();
 		System.out.println("Informe a data do aniversário:");
-		System.out.println("Dia:");
-		String dia = scanner.next();
-		System.out.println("Mẽs: ");
-		System.out.println("Informe numero do mês.");
-		String mes = scanner.next();
-		System.out.println("Ano:");
-		int ano = scanner.nextInt();
-		Data data = new Data(dia, mes, ano);
+		System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+		String dataNiver = scanner.next();
+		Data data = new Data(dataNiver);
 		System.out.println("Informe a data da festa:");
-		String dataFesta = scanner.nextLine();
+		System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+		String dataFesta = scanner.next();
 		System.out.println("Informe a hora da festa:");
-		String horaFesta = scanner.nextLine();
+		System.out.println("Por favor informe nesse formato: HH:MM");
+		String horaFesta = scanner.next();
 		Aniversario aniversario = new Aniversario(codigo, nome, data, dataFesta, horaFesta);
 		return ca.criar(aniversario);
 	}
@@ -252,18 +230,13 @@ public class Formularios {
 		scanner.nextLine();
 		String nome = scanner.nextLine();
 		System.out.println("Informe a data do aniversário:");
-		System.out.println("Dia:");
-		String dia = scanner.next();
-		System.out.println("Mẽs: ");
-		System.out.println("Informe numero do mês.");
-		String mes = scanner.next();
-		System.out.println("Ano:");
-		int ano = scanner.nextInt();
-		Data data = new Data(dia, mes, ano);
+		System.out.println("Por favor informe nesse formato: DD/MM/AAAA");
+		String dataNiver = scanner.next();
+		Data data = new Data(dataNiver);
 		System.out.println("Informe a data da festa:");
-		String dataFesta = scanner.nextLine();
+		String dataFesta = scanner.next();
 		System.out.println("Informe a hora da festa:");
-		String horaFesta = scanner.nextLine();
+		String horaFesta = scanner.next();
 		Aniversario aniversario = new Aniversario(codigo, nome, data, dataFesta, horaFesta);
 		ca.editar(aniversario);
 	}

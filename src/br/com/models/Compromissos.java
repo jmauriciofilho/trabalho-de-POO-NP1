@@ -2,7 +2,9 @@ package br.com.models;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by mauricio on 08/03/17.
@@ -15,6 +17,7 @@ public class Compromissos {
     private boolean diaInteiro;
     private Data dataInicio;
     private Data dataFim;
+    private List<Compromissos> repeticoes = new ArrayList<>();
 
 
     public Compromissos(int codigo){
@@ -87,7 +90,22 @@ public class Compromissos {
         return dataInicio;
     }
 
+    public void setDataInicio(Data dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
     public Data getDataFim() {
         return dataFim;
+    }
+
+    public void repetirCompromissos(Compromissos c, String escolhaDiaMesAno, int repeticao) {
+        Compromissos[] datasRepeticao = new Compromissos[repeticao];
+        this.repeticoes.add(c);
+        int repetir = 1;
+
+        for (int i = 1; i < datasRepeticao.length; i++) {
+            c.getDataInicio().repetirData(escolhaDiaMesAno, repetir++);
+            this.repeticoes.add(c);
+        }
     }
 }

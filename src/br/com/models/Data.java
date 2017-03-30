@@ -9,47 +9,32 @@ import java.util.Calendar;
  */
 public class Data {
 
-	private String dia;
+	private String data;
 	private String diaDaSemana;
-	private String mes;
-	private int ano;
 	private String hora;
+	private Calendar dtCompleta = Calendar.getInstance();
 
-	public Data(String  dia, String mes, int ano){
-		this.dia = dia;
-		this.mes = mes;
-		this.ano = ano;
+	public Data(String  data){
+		this.data = data;
 	}
 
-	public Data(String  dia, String mes, int ano, String hora){
-		this.dia = dia;
-		this.mes = mes;
-		this.ano = ano;
+	public Data(String  data, String hora){
+		this.data = data;
 		this.hora = hora;
 	}
 
-	public Data(String  dia, String diaDaSemana, String mes, int ano){
-		this.dia = dia;
-		this.diaDaSemana = diaDaSemana;
-		this.mes = mes;
-		this.ano = ano;
-
-	}
-
 	public Data(String dia, String diaDaSemana, String mes, int ano, String hora){
-		this.dia = dia;
+		this.data = data;
 		this.diaDaSemana = diaDaSemana;
-		this.mes = mes;
-		this.ano = ano;
 		this.hora = hora;
 	}
 
 	public String mostrarData(){
-		return dia + "/" + mes + "/" + ano;
+		return data;
 	}
 
 	public String mostrarDataHora(){
-		return dia + "/" + mes + "/" + ano + " " + hora + "h";
+		return data + " " + hora + "h";
 	}
 
 	public String retornarDiaDaSemana(Data data) {
@@ -127,28 +112,12 @@ public class Data {
 
 	}
 
-	public String getDia() {
-		return dia;
+	public String getData() {
+		return data;
 	}
 
-	public void setDia(String dia) {
-		this.dia = dia;
-	}
-
-	public String getMes() {
-		return mes;
-	}
-
-	public void setMes(String mes) {
-		this.mes = mes;
-	}
-
-	public int getAno() {
-		return ano;
-	}
-
-	public void setAno(int ano) {
-		this.ano = ano;
+	public void setData(String data) {
+		this.data = data;
 	}
 
 	public String getHora() {
@@ -161,5 +130,24 @@ public class Data {
 
 	public String getDiaDaSemana() {
 		return diaDaSemana;
+	}
+
+	public void repetirData(String escolhaDiaMesAno, int repeticao){
+		int d=0, m=0, a=0;
+		if(escolhaDiaMesAno == "DIA"){
+			d=1;
+		}
+		if(escolhaDiaMesAno == "MES" || escolhaDiaMesAno == "MÊS"){
+			m = 1;
+		}
+		if (escolhaDiaMesAno == "ANO"){
+			a = 1;
+		}
+		if (escolhaDiaMesAno == "SEMANA"){
+			d = 7;
+		}
+
+		this.dtCompleta.set(dtCompleta.get(Calendar.YEAR) + a, dtCompleta.get(Calendar.MONTH) + m,
+				dtCompleta.get(Calendar.DAY_OF_MONTH)+ d);
 	}
 }
