@@ -53,10 +53,10 @@ public class ModoAgenda {
 		System.out.println("==========" + nomeMes + "==========");
 		System.out.println("==========COMPROMISSOS=========");
 		int cont1 = 0;
-		for (int i = 0; i < compromissoss.size(); i++){
-			if (compromissoss.get(i).retornarNumeroMes() == mes){
-				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
-				compromissoss.get(i).mostrar();
+		for (Compromissos compromisso : compromissoss){
+			if (compromisso.getDataInicio().retornarNumeroMes(compromisso.getDataInicio()) == mes){
+				System.out.println(compromisso.getDataInicio().retornarDiaDaSemana(compromisso.getDataInicio()));
+				compromisso.mostrar();
 				cont1++;
 			}
 		}
@@ -65,10 +65,10 @@ public class ModoAgenda {
 		}
 		System.out.println("=======TAREFAS========");
 		int cont2 = 0;
-		for (int i = 0; i < tarefass.size(); i++) {
-			if (tarefass.get(i).retornarNumeroMes() == mes){
-				System.out.println(tarefass.get(i).retornarDiaDaSemana());
-				tarefass.get(i).mostrar();
+		for (Tarefas tarefa : tarefass) {
+			if (tarefa.getDataDeConclusao().retornarNumeroMes(tarefa.getDataDeConclusao()) == mes){
+				System.out.println(tarefa.getDataDeConclusao().retornarDiaDaSemana(tarefa.getDataDeConclusao()));
+				tarefa.mostrar();
 				cont2++;
 			}
 		}
@@ -78,8 +78,8 @@ public class ModoAgenda {
 		System.out.println("========FERIADOS========");
 		int cont3 = 0;
 		for (Feriados feriados: feriadoss) {
-			if (feriados.retornarNumeroMes() == mes){
-				System.out.println(feriados.retornarDiaDaSemana());
+			if (feriados.getData().retornarNumeroMes(feriados.getData()) == mes){
+				System.out.println(feriados.getData().retornarDiaDaSemana(feriados.getData()));
 				feriados.mostrar();
 				cont3++;
 			}
@@ -90,8 +90,8 @@ public class ModoAgenda {
 		System.out.println("=======ANIVERSÁRIOS=======");
 		int cont4 = 0;
 		for (Aniversario aniversario:aniversarios) {
-			if (aniversario.retornarNumeroMes() == mes){
-				System.out.println(aniversario.retornarDiaDaSemana());
+			if (aniversario.getData().retornarNumeroMes(aniversario.getData()) == mes){
+				System.out.println(aniversario.getData().retornarDiaDaSemana(aniversario.getData()));
 				aniversario.mostrar();
 				cont4++;
 			}
@@ -111,10 +111,10 @@ public class ModoAgenda {
 		int numeroSemana = calendar.get(Calendar.WEEK_OF_MONTH);
 		System.out.println("==========COMPROMISSOS=========");
 		int cont = 0;
-		for (int i = 0; i < compromissoss.size(); i++){
-			if (compromissoss.get(i).retornarNumeroDaSemana() == numeroSemana){
-				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
-				compromissoss.get(i).mostrar();
+		for (Compromissos compromisso : compromissoss){
+			if (compromisso.getDataInicio().retornarNumeroDaSemana(compromisso.getDataInicio()) == numeroSemana){
+				System.out.println(compromisso.getDataInicio().retornarDiaDaSemana(compromisso.getDataInicio()));
+				compromisso.mostrar();
 				cont++;
 			}
 		}
@@ -123,10 +123,10 @@ public class ModoAgenda {
 		}
 		System.out.println("=======TAREFAS========");
 		int cont2 = 0;
-		for (int i = 0; i < tarefass.size(); i++) {
-			if (tarefass.get(i).retornarNumeroDaSemana() == numeroSemana){
-				System.out.println(tarefass.get(i).retornarDiaDaSemana());
-				tarefass.get(i).mostrar();
+		for (Tarefas tarefa : tarefass) {
+			if (tarefa.getDataDeConclusao().retornarNumeroDaSemana(tarefa.getDataDeConclusao()) == numeroSemana){
+				System.out.println(tarefa.getDataDeConclusao().retornarDiaDaSemana(tarefa.getDataDeConclusao()));
+				tarefa.mostrar();
 				cont2++;
 			}
 		}
@@ -136,8 +136,8 @@ public class ModoAgenda {
 		System.out.println("========FERIADOS========");
 		int cont3 = 0;
 		for (Feriados feriado : feriadoss) {
-			if (feriado.retornarNumeroDaSemana() == numeroSemana){
-				System.out.println(feriado.retornarDiaDaSemana());
+			if (feriado.getData().retornarNumeroDaSemana(feriado.getData()) == numeroSemana){
+				System.out.println(feriado.getData().retornarDiaDaSemana(feriado.getData()));
 				feriado.mostrar();
 				cont3++;
 			}
@@ -148,8 +148,8 @@ public class ModoAgenda {
 		System.out.println("=======ANIVERSÁRIOS=======");
 		int cont4 = 0;
 		for (Aniversario aniversario : aniversarios) {
-			if (aniversario.retornarNumeroDaSemana() == numeroSemana){
-				System.out.println(aniversario.retornarDiaDaSemana());
+			if (aniversario.getData().retornarNumeroDaSemana(aniversario.getData()) == numeroSemana){
+				System.out.println(aniversario.getData().retornarDiaDaSemana(aniversario.getData()));
 				aniversario.mostrar();
 				cont4++;
 			}
@@ -168,10 +168,10 @@ public class ModoAgenda {
 		int numero = calendar.get(Calendar.DAY_OF_YEAR);
 		System.out.println("==========COMPROMISSOS=========");
 		int cont = 0;
-		for (int i = 0; i < compromissoss.size(); i++){
-			if (compromissoss.get(i).retornarNumeroDoDiaDoAno() == numero){
-				System.out.println(compromissoss.get(i).retornarDiaDaSemana());
-				compromissoss.get(i).mostrar();
+		for (Compromissos compromisso : compromissoss){
+			if (compromisso.getDataInicio().retornarNumeroDoDiaDoAno(compromisso.getDataInicio()) == numero){
+				System.out.println(compromisso.getDataInicio().retornarDiaDaSemana(compromisso.getDataInicio()));
+				compromisso.mostrar();
 				cont++;
 			}
 		}
@@ -180,10 +180,10 @@ public class ModoAgenda {
 		}
 		System.out.println("=======TAREFAS========");
 		int cont2 = 0;
-		for (int i = 0; i < tarefass.size(); i++) {
-			if (tarefass.get(i).retornarNumeroDoDiaDoAno() == numero){
-				System.out.println(tarefass.get(i).retornarDiaDaSemana());
-				tarefass.get(i).mostrar();
+		for (Tarefas tarefa : tarefass) {
+			if (tarefa.getDataDeConclusao().retornarNumeroDoDiaDoAno(tarefa.getDataDeConclusao()) == numero){
+				System.out.println(tarefa.getDataDeConclusao().retornarDiaDaSemana(tarefa.getDataDeConclusao()));
+				tarefa.mostrar();
 				cont2++;
 			}
 		}
@@ -193,8 +193,8 @@ public class ModoAgenda {
 		System.out.println("========FERIADO========");
 		int cont3 = 0;
 		for (Feriados feriados:feriadoss) {
-			if (feriados.retornarNumeroDoDiaDoAno() == numero){
-				System.out.println(feriados.retornarDiaDaSemana());
+			if (feriados.getData().retornarNumeroDoDiaDoAno(feriados.getData()) == numero){
+				System.out.println(feriados.getData().retornarDiaDaSemana(feriados.getData()));
 				feriados.mostrar();
 				cont3++;
 			}
@@ -205,8 +205,8 @@ public class ModoAgenda {
 		System.out.println("=======ANIVERSÁRIOS=======");
 		int cont4 = 0;
 		for (Aniversario aniversario:aniversarios) {
-			if (aniversario.retornarNumeroDoDiaDoAno() == numero){
-				System.out.println(aniversario.retornarDiaDaSemana());
+			if (aniversario.getData().retornarNumeroDoDiaDoAno(aniversario.getData()) == numero){
+				System.out.println(aniversario.getData().retornarDiaDaSemana(aniversario.getData()));
 				aniversario.mostrar();
 				cont4++;
 			}
