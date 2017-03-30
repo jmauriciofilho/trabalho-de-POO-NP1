@@ -16,6 +16,14 @@ public class PadraoData {
 	private DateFormat 	dtHoraForm = new SimpleDateFormat("dd/MM/yyyy HH:mm", new Locale("pt","br"));
 	private DateFormat 	dtForm = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt","br"));
 	private DateFormat horaForm = new SimpleDateFormat("HH:mm");
+
+	public PadraoData(){
+
+	}
+
+	public PadraoData(String data){
+		this.setApenasData(data);
+	}
 	
 	public void setApenasData(String data){
 		try {
@@ -35,6 +43,11 @@ public class PadraoData {
         }
 	}
 
+	public String getDataHora(){
+		return dtForm.format(dtCompleta.getTime())+" "+
+				dtCompleta.get(Calendar.HOUR)+":"+ dtCompleta.get(Calendar.MINUTE);
+	}
+
 	public String getApenasData(){
 		return dtForm.format(dtCompleta.getTime());
 	}
@@ -45,7 +58,8 @@ public class PadraoData {
 		this.dtCompleta.set(Calendar.HOUR, h);
 		this.dtCompleta.set(Calendar.MINUTE, m);
 	}
-	
+
+
 	public String getApenasHora(){
 		return dtCompleta.get(Calendar.HOUR)+":"+ dtCompleta.get(Calendar.MINUTE);
 	}
@@ -86,27 +100,35 @@ public class PadraoData {
 		return nomeMes;
 	}
 
+	public int getNumeroMes(){
+
+		return this.dtCompleta.get(Calendar.MONTH);
+	}
+
 	public int getSemanaDoMes(){
 		return this.dtCompleta.getWeekYear();
 	}
 
-	public void repetirData(String escolhaDiaMesAno, int repeticao){
+	public void repetirData(int escolhaDiaMesAno, int repeticao){
 		int d=0, m=0, a=0;
-		if(escolhaDiaMesAno == "DIA"){
+
+		if(escolhaDiaMesAno == 1){
 			d=1;
 		}
-		if(escolhaDiaMesAno == "MES" || escolhaDiaMesAno == "MÊS"){
+		if(escolhaDiaMesAno == 2){
 			m = 1;
 		}
-		if (escolhaDiaMesAno == "ANO"){
+		if (escolhaDiaMesAno == 3){
 			a = 1;
 		}
-		if (escolhaDiaMesAno == "SEMANA"){
+		if (escolhaDiaMesAno == 4){
 			d = 7;
 		}
-
+//        for (int i = 0; i < repeticao; i++) {
 		this.dtCompleta.set(dtCompleta.get(Calendar.YEAR) + a, dtCompleta.get(Calendar.MONTH) + m,
 				dtCompleta.get(Calendar.DAY_OF_MONTH)+ d);
+//		}
+
 	}
 
 

@@ -17,20 +17,31 @@ import java.util.List;
 public class ModoAgenda {
 
 	public static void mostrarCompromissosDoMes(ControleCompromisso c, ControleTarefas ct, ControleFeriados cf, ControleAniversario ca){
-        List<Compromissos> compromissoss = c.buscarTodos();
+		List<Compromissos> compromissoss = c.buscarTodos();
 		List<Tarefas> tarefass = ct.buscarTodos();
 		Feriados[] feriadoss = cf.buscarTodos();
 		List<Aniversario> aniversarios = ca.buscarTodos();
-		PadraoData dtAtual = new PadraoData();
+		PadraoData hoje = new PadraoData();
+
+		Calendar calendar = Calendar.getInstance();
+		int mes = calendar.get(Calendar.MONTH);
 
 
-		System.out.println("==========" + dtAtual.getMes() + "==========");
+		System.out.println("==========" + hoje.getMes() + "==========");
 		System.out.println("==========COMPROMISSOS=========");
 		int cont1 = 0;
 		for (int i = 0; i < compromissoss.size(); i++){
-			if (compromissoss.get(i).getDataCompleta().getMes().toUpperCase() == dtAtual.getMes().toUpperCase()){
+			if (compromissoss.get(i).getDataCompleta().getNumeroMes() == mes){
 				System.out.println(compromissoss.get(i).getDataCompleta().getDiaSemana());
 				compromissoss.get(i).mostrar();
+
+				if(compromissoss.get(i).getRepeticoes()!= null){
+					if (compromissoss.get(i).getRepeticoes().get(i).getDataCompleta().getNumeroMes() == mes){
+						System.out.println(compromissoss.get(i).getRepeticoes().get(i).getDataCompleta().getDiaSemana());
+						compromissoss.get(i).getRepeticoes().get(i).mostrar();
+					}
+				}
+
 				cont1++;
 			}
 		}
@@ -40,7 +51,7 @@ public class ModoAgenda {
 		System.out.println("=======TAREFAS========");
 		int cont2 = 0;
 		for (int i = 0; i < tarefass.size(); i++) {
-			if (tarefass.get(i).getDataDeConclusao().getMes().toUpperCase() == dtAtual.getMes().toUpperCase()){
+			if (tarefass.get(i).getDataDeConclusao().getNumeroMes() == mes){
 				System.out.println(tarefass.get(i).getDataDeConclusao().getDiaSemana());
 				tarefass.get(i).mostrar();
 				cont2++;
@@ -52,7 +63,7 @@ public class ModoAgenda {
 		System.out.println("========FERIADOS========");
 		int cont3 = 0;
 		for (Feriados feriados: feriadoss) {
-			if (feriados.getData().getMes().toUpperCase() == dtAtual.getMes().toUpperCase()){
+			if (feriados.getData().getNumeroMes() == mes){
 				System.out.println(feriados.getData().getDiaSemana());
 				feriados.mostrar();
 				cont3++;
@@ -64,7 +75,7 @@ public class ModoAgenda {
 		System.out.println("=======ANIVERSÁRIOS=======");
 		int cont4 = 0;
 		for (Aniversario aniversario:aniversarios) {
-			if (aniversario.getDataNiver().getMes().toUpperCase() == dtAtual.getMes().toUpperCase()){
+			if (aniversario.getDataNiver().getNumeroMes() == mes){
 				System.out.println(aniversario.getDataNiver().getDiaSemana());
 				aniversario.mostrar();
 				cont4++;

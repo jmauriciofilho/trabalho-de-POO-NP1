@@ -13,6 +13,13 @@ public class Compromissos {
     private PadraoData dtFinal = new PadraoData();
     private List<Compromissos> repeticoes = new ArrayList<>();
 
+    public Compromissos(Compromissos c){
+        this.codigo = c.codigo;
+        this.titulo = c.titulo;
+        this.descricao = c.descricao;
+        this.dataCompleta.setDataHora(c.getDataCompleta().getDataHora());
+        this.dtFinal.setDataHora(c.getDtFinal().getDataHora());
+    }
 
     public Compromissos(int codigo){
         this.codigo = codigo;
@@ -101,14 +108,37 @@ public class Compromissos {
         this.dtFinal = dtFinal;
     }
 
-    public void repetirCompromissos(Compromissos c, String escolhaDiaMesAno, int repeticao) {
-        Compromissos[] datasRepeticao = new Compromissos[repeticao];
-        this.repeticoes.add(c);
-        int repetir = 1;
+//    public void repetirCompromissos(Compromissos c, String escolhaDiaMesAno, int repeticao) {
+//        Compromissos[] datasRepeticao = new Compromissos[repeticao];
+//        this.repeticoes.add(c);
+//        int repetir = 1;
+//
+//        for (int i = 1; i < datasRepeticao.length; i++) {
+//            c.getDataCompleta().repetirData(escolhaDiaMesAno, repetir++);
+//            this.repeticoes.add(c);
+//        }
+//    }
+    public void repetirCompromissos(Compromissos c, int escolhaDiaMesAno, int repeticao){
+        int repetir=1;
+        PadraoData guardarData = c.getDataCompleta();
 
-        for (int i = 1; i < datasRepeticao.length; i++) {
+        for (int i = 1; i <= repeticao; i ++) {
+
             c.getDataCompleta().repetirData(escolhaDiaMesAno, repetir++);
-            this.repeticoes.add(c);
+
+            Compromissos repetido = new Compromissos(c);
+
+            this.getRepeticoes().add(repetido);
         }
+
+        c.setDataCompleta(guardarData);
+    }
+
+    public List <Compromissos> getRepeticoes() {
+        return repeticoes;
+    }
+
+    public void setRepeticoes(Compromissos repeticoes) {
+        this.repeticoes.add(repeticoes);
     }
 }
