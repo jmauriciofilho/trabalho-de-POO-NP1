@@ -125,8 +125,8 @@ public class Formularios {
 
 	public static void formMostrarCompromissos(ControleCompromisso c){
 		List<Compromissos> compromissos = c.buscarTodos();
-		for (int i = 0; i < compromissos.size(); i++){
-			compromissos.get(i).mostrar();
+		for (Compromissos compromisso : compromissos){
+			compromisso.mostrar();
 		}
 	}
 
